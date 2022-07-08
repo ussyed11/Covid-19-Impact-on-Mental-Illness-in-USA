@@ -2,7 +2,12 @@
 ## Overview 
 The 2020 Covid-19 pandemic caused millions of Americans to isolate from others and practice social distance. The purpose of this group project is to find if there is a correlation between the covid-19 pandemic and a negative affect on mental health and depression rates. We will primarily look at changes in mental health and depression rates broken down by states in the United States.  
 
-What impact did covid have on mental health?  Was every state affected the same way or were some states affected more than others? Are the affects similar across gender groups, household size, age groups, and race and ethnicity groups?
+### Questions we are looking to answer:
+
+* What impact did covid have on mental health especially depression?  
+* Was every state affected the same way or were some states affected more than others? 
+* Are the affects similar across gender groups, household size, age groups, and race and ethnicity groups?
+* Which states are ideal for investors to open mental health clinics and relaxation centers?
 
 
 ## Data Source
