@@ -1,11 +1,11 @@
 # Covid-19-and-Current-Mental Health-Correlation
-## Purpose 
-### The purpose of this project is to see if the covid pandemic had an impact on mental health. Throughout the project we will answer the following questions:
-What impact did covid have on mental health?  
-Was every state affected the same way or were there states that saw a greater increase impact in mental health?       
-How does mental health and depression rates compare between genders? 
+## Overview 
+The 2020 Covid-19 pandemic caused milions of americans to isolate from others and practice social distance. The purpose of this group project is to find if there is a correlation between the covid-19 pandemic and a negative affect on mental health and depression rates. We will primarily look at changes in mental health and depression rates broken down by states in the United States.  
+What impact did covid have on mental health?  Was every state affected the same way or were some states affected more than others? Are the affects similar accross gender groups, household size, age groups, and race and ethnictiy groups?
+
 
 ## Data Source
+In order to prove our hypothesis, we will utilze the following data sets and create a linear regression to see if there is a correlation. 
 * Percent of Adults struggling with depression from 2011-2020. This data is broken down by states. 
 https://usafacts.org/data/topics/people-society/health/health-risk-factors/depression/ 
 * Indicator- those who took prescription medication for mental health from 8/19/2020-8/31/2020. Data is broken down by age groups, sex, race, ethnicity, education level, and states. [Mental_Health_Care_in_the_Last_4_Weeks (3).csv](https://github.com/ussyed11/Covid-19-Impact-on-Depression-in-USA/files/9073567/Mental_Health_Care_in_the_Last_4_Weeks.3.csv)
