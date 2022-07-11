@@ -12,6 +12,11 @@ The 2020 Covid-19 pandemic caused millions of Americans to isolate from others a
 * Are the affects similar across gender groups, household size, age groups, and race and ethnicity groups?
 * Which states are ideal for investors to open mental health clinics and relaxation centers?
 
+## Hypothesis
+
+* Null Hypothesis:  There is no correlation in COVID-19 and recent depression cases across the United States.
+* Alternate Hypothesis:  There is a strong correlation in COVID-19 and recent depression cases across the United States.
+
 
 ## Data Source
 In order to prove our hypothesis, we will utilize the following data sets and create a linear regression model to see if there is a correlation between covid-19 and mental health. 
@@ -21,3 +26,18 @@ https://usafacts.org/data/topics/people-society/health/health-risk-factors/depre
 * Symptoms of Depression Experienced in the Last two weeks broken down by age groups, sex, gender, sexual orientation, race/ethnicity, education level, marital status,household size, income level. each state has a different tab.  [US Census Depression Syndrome.xlsx](https://github.com/ussyed11/Covid-19-Impact-on-Depression-in-USA/files/9073568/US.Census.Depression.Syndrome.xlsx)
 * Covid Cases and Covid related deaths broken down by states in 2021. [United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv](https://github.com/ussyed11/Covid-19-Impact-on-Depression-in-USA/files/9073569/United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv)
 * Information on mental health diagnoses and substance use. https://www.datafiles.samhsa.gov/dataset/mental-health-client-level-data-2019-mh-cld-2019-ds0001
+
+## Data Preprocessing
+
+We are using Google colab to preprocess our data files, add or remove columns, remove nulls and Nan, delete duplicate, and start with initial joins in Pandas. We are using Matplotlib to explore data in scatter plots. The cleaned data set will be imported to pgadmin database as a csv file format.
+
+## Data base
+
+We are usinng Postgres pgadmin4 to store our data set and to run SQL to find the needed information to create a final data set for the machine learning model.  We started with the ERD to show our initial schema via using QuickDBD.  We chose otr table names and datatypes.  
+
+## Machine Learning
+
+We started loading a mock up data set to initiate the supervised machine learning model by choosing the linear regression model.  
+
+
+
