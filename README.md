@@ -29,11 +29,11 @@ https://usafacts.org/data/topics/people-society/health/health-risk-factors/depre
 
 ## Data Preprocessing
 
-We are using Google colab to preprocess our data files, add or remove columns, remove nulls and Nan, delete duplicate, and start with initial joins in Pandas. We are using Matplotlib to explore data in scatter plots. The cleaned data set will be imported to pgadmin database as a csv file format.
+We are using Google Colab to preprocess our data files, add or remove columns, remove nulls and Nan, delete duplicates, and start with initial joins in Pandas. We are using Matplotlib to explore data in scatter plots. The cleaned data set will be imported to a pgadmin4 database as a csv file format.
 
 ## Data base
 
-We are usinng Postgres pgadmin4 to store our data set and to run SQL to find the needed information to create a final data set for the machine learning model.  We started with the ERD to show our initial schema via using QuickDBD.  We chose otr table names and datatypes.  
+We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find the needed information to create a final data set for the machine learning model.  We started with an ERD to show our initial data base structure via QuickDBD.  We selected our table names and datatypes.  
 
 ## Machine Learning
 
