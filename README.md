@@ -9,8 +9,9 @@ The 2020 Covid-19 pandemic caused millions of Americans to isolate from others a
 
 * What impact did covid have on mental health especially depression?  
 * Was every state affected the same way or were some states affected more than others? 
-* Are the affects similar across gender groups, household size, age groups, and race and ethnicity groups?
+* Are the affects similar across age groups, income brackets, employment status, and education?
 * Which states are ideal for investors to open mental health clinics and relaxation centers?
+* How accurately will the ML model predict an ideal state for mental wellness centers?
 
 ## Hypothesis
 
