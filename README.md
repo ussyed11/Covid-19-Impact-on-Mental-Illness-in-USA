@@ -40,5 +40,10 @@ We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find t
 
 We started loading a mock up data set to initiate the supervised machine learning model by choosing the linear regression model.  
 
+## Initial Google Slides:
+
+https://docs.google.com/presentation/d/1_zVBD73PyOs1N2mNhKlbCsAn87KuRsS9ESyjFUSO0Zo/edit?usp=sharing
+
+
 
 
