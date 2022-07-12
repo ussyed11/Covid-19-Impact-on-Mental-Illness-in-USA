@@ -38,7 +38,7 @@ We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find t
 
 ## Machine Learning
 
-We started loading a mock up data set to initiate the supervised machine learning model by choosing the linear regression model.  
+We started loading a mock up data set to initiate the supervised machine learning model by choosing the linear regression model.  We will also use k-mean clustering to predict the ideal location for the prospect mental wellness centers.
 
 ## Initial Google Slides:
 
