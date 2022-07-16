@@ -7,24 +7,27 @@ The 2020 Covid-19 pandemic caused millions of Americans to isolate from others a
 
 ### Questions we are looking to answer:
 
-* What impact did covid have on mental health especially depression?  
-* Was every state affected the same way or were some states affected more than others? 
+* What impact did covid-19 have on adults' mental health?  
+* Was every state affected the same way or some states affected more than others? 
 * Are the affects similar across age groups, income brackets, employment status, and education?
-* Which states are ideal for investors to open mental health clinics and relaxation centers?
-* How accurately will the ML model predict an ideal state for mental wellness centers?
+* Which reginal states are ideal for investors to open mental health clinics and relaxation centers?
+* How accurately will the ML model predict the outcome for mental illness based on selected features?
 
 ## Hypothesis
 
-* Null Hypothesis:  There is no correlation in COVID-19 and recent depression cases across the United States.
-* Alternate Hypothesis:  There is a strong correlation in COVID-19 and recent depression cases across the United States.
+* Null Hypothesis:  There is no correlation in COVID-19 and recent mental illness across the United States.
+* Alternate Hypothesis:  There is a strong correlation in COVID-19 and recent mental illness across the United States.
+
+### Team Method of Communication
+
+We are going to use the Slack channel and Zoom to communicate and collabarate for our project. We are planning to meet at least twice a week outside of classroom hours to go over the files and codes.
 
 
 ## Data Source
-In order to prove our hypothesis, we will utilize the following data sets and create a linear regression model to see if there is a correlation between covid-19 and mental health. 
-* Percent of Adults struggling with depression from 2011-2020. This data is broken down by states. 
-https://usafacts.org/data/topics/people-society/health/health-risk-factors/depression/ 
-* Indicator- those who took prescription medication for mental health from 8/19/2020-8/31/2020. Data is broken down by age groups, sex, race, ethnicity, education level, and states. [Mental_Health_Care_in_the_Last_4_Weeks (3).csv](https://github.com/ussyed11/Covid-19-Impact-on-Depression-in-USA/files/9073567/Mental_Health_Care_in_the_Last_4_Weeks.3.csv)
-* Symptoms of Depression Experienced in the Last two weeks broken down by age groups, sex, gender, sexual orientation, race/ethnicity, education level, marital status,household size, income level. each state has a different tab.  [US Census Depression Syndrome.xlsx](https://github.com/ussyed11/Covid-19-Impact-on-Depression-in-USA/files/9073568/US.Census.Depression.Syndrome.xlsx)
+In order to prove our hypothesis, we will utilize the following data sets and create a linear regression model and clustering model to see if there is a correlation between covid-19 and mental health. 
+
+
+
 * Covid Cases and Covid related deaths broken down by states in 2021. [United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv](https://github.com/ussyed11/Covid-19-Impact-on-Depression-in-USA/files/9073569/United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv)
 * Information on mental health diagnoses and substance use. https://www.datafiles.samhsa.gov/dataset/mental-health-client-level-data-2019-mh-cld-2019-ds0001
 
