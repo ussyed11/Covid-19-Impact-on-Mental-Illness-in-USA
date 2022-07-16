@@ -26,7 +26,7 @@ We are going to use the Slack channel and Zoom to communicate and collabarate fo
 ## Data Extraction
 In order to prove our hypothesis, we will utilize the following data sets and create a linear regression model and clustering model to see if there is a correlation between covid-19 and mental health. 
 
-Our team started looking at CDC website that directed us to the SAMHSA website that has population survey data for mental illness. They have data stored until 2020.  We want to compare the 2019 data results with 2020 and 2021 to check the prevalence of any mental illness in all states.  We are unable to get the mental health data based on income levels for all states.  It is broken down to Regional levels. It is collected and stored based on age groups.  The 2021 mental illness data for all states is not available based on age groups either.   We have to run our mental issues analyses based on income and education on regional data.  We are goibg to get our required data sets through these methods:
+Our team started looking at CDC website that directed us to the SAMHSA website that has population survey data for mental illness. They have data stored until 2020.  We want to compare the 2019 data results with 2020 and 2021 to check the prevalence of any mental illness in all states.  We are unable to get the mental health data based on income levels for all states.  It is broken down to Regional levels. It is collected and stored based on age groups.  The 2021 mental illness data for all states is not available based on age groups either.   We have to run our mental issues analyses based on income and education on regional data.  We are going to get our required data sets through these methods:
 
 * Uploading saved data as csv files
 * ApI calls
