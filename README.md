@@ -11,16 +11,17 @@ The 2020 Covid-19 pandemic caused millions of Americans to isolate from others a
 * Was every state affected the same way or were some states affected more than others? 
 * Are the affects similar across age groups, income brackets, employment status, and education?
 * Which states are ideal for investors to open mental health clinics and relaxation centers?
-* How accurately will the ML model predict an ideal state for mental wellness centers?
+* How accurately will our ML predicts mental health issues across states/regions based on features ?
+
 
 ## Hypothesis
 
 * Null Hypothesis:  There is no relation between the COVID-19 pandemic and an increase in any mental health issues 
-* Alternate Hypothesis:  There is a strong correlation in COVID-19 and recent depression cases across the United States.
+* Alternate Hypothesis:  There is a relation between the COVID-19 pandemic and an increase in any mental health issues 
 
 
 ## Data Source
-In order to prove our hypothesis, we will utilize the following data sets and create a linear regression model to see if there is a correlation between covid-19 and mental health. 
+In order to prove our hypothesis, we will utilize the following data sets and create a linear regression model in order to attempt to find a correlation between covid-19 and mental health. 
 * Percent of Adults struggling with depression from 2011-2020. This data is broken down by states. 
 https://usafacts.org/data/topics/people-society/health/health-risk-factors/depression/ 
 * Indicator- those who took prescription medication for mental health from 8/19/2020-8/31/2020. Data is broken down by age groups, sex, race, ethnicity, education level, and states. [Mental_Health_Care_in_the_Last_4_Weeks (3).csv](https://github.com/ussyed11/Covid-19-Impact-on-Depression-in-USA/files/9073567/Mental_Health_Care_in_the_Last_4_Weeks.3.csv)
@@ -30,7 +31,7 @@ https://usafacts.org/data/topics/people-society/health/health-risk-factors/depre
 
 ## Data Preprocessing
 
-We are using Google Colab to preprocess our data files, add or remove columns, remove null and Nan values, delete duplicates, and start with initial joins of databases in Pandas. We are using Matplotlib to explore data in scatter plots. The cleaned data set will be imported to a pgadmin4 database as a csv file format.
+We are using Google Colab to preprocess our data files, create dataframes, add or remove columns, remove null and Nan values, delete duplicates, and start with initial joins of databases in Pandas. We are using Matplotlib to explore data in scatter plots. The cleaned data set will be imported to a pgadmin4 database as a csv file format.
 
 ## Data base
 
