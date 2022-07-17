@@ -15,7 +15,7 @@ The 2020 Covid-19 pandemic caused millions of Americans to isolate from others a
 
 ## Hypothesis
 
-* Null Hypothesis:  There is no correlation in COVID-19 and recent depression cases across the United States.
+* Null Hypothesis:  There is no relation between the COVID-19 pandemic and an increase in any mental health issues 
 * Alternate Hypothesis:  There is a strong correlation in COVID-19 and recent depression cases across the United States.
 
 
