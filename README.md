@@ -1,6 +1,14 @@
 ![covid-mh-prime](https://user-images.githubusercontent.com/98566486/178073212-c4bd7c12-8c4b-4964-8dcd-a857379149c3.jpg)
 
 # Covid-19-and-Current-Mental Health-Correlation
+## Group Members
+ Members     | Role     |    Responsibilities  |
+| ------------- | ------------- | -------- |
+| Daniel          | Database  Lead       | Create a databases,manage the ETL process |
+| Darren| Machine Learning Lead         | Creating a machine learning model |
+|Dwayne |Dashboard Lead | Create a dashboard to present the data
+|Jessica| Github Lead | Responsible for updating the repository and ReadMe
+|Uzma | Database Lead | 
 ## Overview 
 The 2020 Covid-19 pandemic caused millions of Americans to isolate from others and practice social distance. The purpose of this group project is to find if there is a correlation between the covid-19 pandemic and a negative affect on mental health and depression rates. We will primarily look at changes in mental health and depression rates broken down by states in the United States. This analysis will be shared with interested investers to project profitable locations for mental health clinics and relaxation centers throughout the United States.
  
@@ -36,6 +44,12 @@ We are using Google Colab to preprocess our data files, create dataframes, add o
 ## Data base
 
 We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find the needed information to create a final data set for the machine learning model.  We started with an ERD to show our initial data base structure via QuickDBD.  We selected our table names and datatypes.  
+
+## Analysis 
+![]([Regional_Ami](https://user-images.githubusercontent.com/100246124/179753148-6efaf828-378d-4004-9051-d2eae4de62c7.jpg=250x250)
+![Education- _ High School](https://user-images.githubusercontent.com/100246124/179753186-e3463211-bafc-4b06-8090-bff945733bfe.png)
+![Total_Number_Covis_Cases_per_state](https://user-images.githubusercontent.com/100246124/179753443-b06e003b-b2ca-414a-a6b3-2ed7a5d20d4d.png)
+
 
 ## Machine Learning
 
