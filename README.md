@@ -4,11 +4,11 @@
 ## Group Members
  Members     | Role     |    Responsibilities  |
 | ------------- | ------------- | -------- |
-| Daniel          | Database  Lead       | Create a databases,manage the ETL process |
+| Daniel          | Database  Lead       | Create databases and manage the ETL process |
 | Darren| Machine Learning Lead         | Creating a machine learning model |
 |Dwayne |Dashboard Lead | Create a dashboard to present the data
 |Jessica| Github Lead | Responsible for updating the repository and ReadMe
-|Uzma | Database Lead | 
+|Uzma | Database Lead/Project Manager | Create databases and manage the ETL Process. 
 ## Overview 
 The 2020 Covid-19 pandemic caused millions of Americans to isolate from others and practice social distance. The purpose of this group project is to find if there is a correlation between the covid-19 pandemic and a negative affect on mental health and depression rates. We will primarily look at changes in mental health and depression rates broken down by states in the United States. This analysis will be shared with interested investers to project profitable locations for mental health clinics and relaxation centers throughout the United States.
  
