@@ -41,17 +41,17 @@ https://usafacts.org/data/topics/people-society/health/health-risk-factors/depre
 
 We are using Google Colab to preprocess our data files, create dataframes, add or remove columns, remove null and Nan values, delete duplicates, and start with initial joins of databases in Pandas. We are using Matplotlib to explore data in scatter plots. The cleaned data set will be imported to a pgadmin4 database as a csv file format.
 
-## Data base
+## Data Base
 
 We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find the needed information to create a final data set for the machine learning model.  We started with an ERD to show our initial data base structure via QuickDBD.  We selected our table names and datatypes.  
 
 ## Analysis 
 <img src="https://user-images.githubusercontent.com/100246124/179753148-6efaf828-378d-4004-9051-d2eae4de62c7.jpg" width="600">
-
+Mental Health of the 4 US regions broken down by age groups as reported for 2019 (pre-covid) and 2020(covid) year. 
 <img src="https://user-images.githubusercontent.com/100246124/179753186-e3463211-bafc-4b06-8090-bff945733bfe.png" width="600">
 
 <img src="https://user-images.githubusercontent.com/100246124/179753443-b06e003b-b2ca-414a-a6b3-2ed7a5d20d4d.png" width="600" height="400" >
-
+The total covid cases and deaths as reported by states. 
 
 ## Machine Learning
 
