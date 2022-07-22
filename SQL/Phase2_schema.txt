@@ -1,0 +1,42 @@
+AMI_State_Totals_2017_to_2021
+-
+Year varchar
+State varchar
+FIPS varchar
+18_or_Older_AMI_Total int
+
+
+Covid_Totals_2017_to_2021
+-
+Year varchar
+State varchar
+FIPS varchar
+Tot_Cases int
+Tot_Deaths int
+
+
+Employment_Totals_2017_to_2021
+-
+Year varchar
+State varchar
+FIPS varchar
+Employed_2017 int
+Unemployed_2017 int
+Employed_2018 int
+Unemployed_2018 int
+Employed_2019 int
+Unemployed_2019 int
+Employed_2020 int
+Unemployed_2020 int
+Employed_2021 int
+Unemployed_2021 int
+
+
+Median_Income_Total_2017_to_2021
+-
+Year varchar
+State varchar
+FIPS varchar
+Median_Household_Income int
+
+

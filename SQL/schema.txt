@@ -1,0 +1,88 @@
+2019_Age_vs_Depression_Rates 
+-
+State_ID varchar PK
+Age_Range_18_to_29 int
+Age_Range_30_to_39 int
+Age_Range_40_to_49 int
+Age_Range_50_to_59 int
+Age_Range_60_to_69 int 
+Age_Range_70_to_79 int
+Age_Range_80_and_above int
+Total int
+
+
+2019_Household_Income_vs_Depression_Rates
+-
+State_ID varchar PK
+Less_than_25000 int
+25000_to_34999 int
+35000_to_49999 int
+50000_to_74999 int
+75000_to_99999 int
+100000_to_149999 int
+150000_to_199999 int
+200000_and_above int
+Did_not_report int
+Total int
+
+
+2019_Employment_Status_vs_Depression_Rates
+-
+State_ID varchar PK
+Currently_Employed int
+Currently_Unemployed int
+Total int
+
+
+2019_Education_vs_Depression_Rates
+-
+State_ID varchar PK
+Less_than_High_School int
+High_School_or_GED int
+Some_College_or_Associates_Degree int
+Bachelors_Degree_or_Higher int
+Total int
+
+
+2021_Age_vs_Depression_Rates
+-
+State_ID varchar PK
+Age_Range_18_to_29 int
+Age_Range_30_to_39 int
+Age_Range_40_to_49 int
+Age_Range_50_to_59 int
+Age_Range_60_to_69 int 
+Age_Range_70_to_79 int
+Age_Range_80_and_above int
+Total int
+
+2021_Household_Income_vs_Depression_Rates
+-
+State_ID varchar PK
+Less_than_25000 int
+25000_to_34999 int
+35000_to_49999 int
+50000_to_74999 int
+75000_to_99999 int
+100000_to_149999 int
+150000_to_199999 int
+200000_and_above int
+Did_not_report int
+Total int
+
+2021_Employment_Status_vs_Depression_Rates 
+-
+State_ID varchar PK
+Currently_Employed int
+Currently_Unemployed int
+Total int
+
+
+2021_Education_vs_Depression_Rates
+-
+State_ID varchar PK
+Less_than_High_School int
+High_School_or_GED int
+Some_College_or_Associates_Degree int
+Bachelors_Degree_or_Higher int
+Total int
