@@ -32,9 +32,9 @@ https://usafacts.org/data/topics/people-society/health/health-risk-factors/depre
 
 We are using Google Colab to preprocess our data files, add or remove columns, remove nulls and Nan, delete duplicates, and start with initial joins in Pandas. We are using Matplotlib to explore data in scatter plots. The cleaned data set will be imported to a pgadmin4 database as a csv file format.
 
-## Data base
+## Database Storage
 
-We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find the needed information to create a final data set for the machine learning model.  We started with an ERD to show our initial data base structure via QuickDBD.  We selected our table names and datatypes.  
+The data we extracted and transformed is stored in a PostgresSQL database that contains 4 tables created in pgAdmin4. We revised our preivous ERD diagram and reduced the amount of tables needed to store our separate dataframes due to the evolving constraints pertaining to our data wrangling. We continued to ensure that each seperate column in each dataframe had the correct datatype and values for each corresponding data entry. Once our dataframes were finalized we use SQL Alchemy in a GoogleColab/Jupyternotebook with a connection string to connect to our dataframes to their corresponding tables in PostgresSQL. Once the dataframes were properly stored in their respective tables we performed our first join between two seperate tables, AMI Totals and Covid Totals, on the column Year with a left join. Since each tables contains a corresponding Year column we will be able to join any table with the AMI Totals table.
 
 ## Machine Learning
 
