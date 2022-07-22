@@ -29,13 +29,15 @@ The 2020 Covid-19 pandemic caused millions of Americans to isolate from others a
 
 
 ## Data Source
-In order to prove our hypothesis, we will utilize the following data sets and create a linear regression model in order to attempt to find a correlation between covid-19 and mental health. 
+In order to prove our hypothesis, we will utilize the following data sets and create several machine learning models to see if there is a correlation between covid-19 and mental health.
 * Percent of Adults struggling with depression from 2011-2020. This data is broken down by states. 
 https://usafacts.org/data/topics/people-society/health/health-risk-factors/depression/ 
 * Indicator- those who took prescription medication for mental health from 8/19/2020-8/31/2020. Data is broken down by age groups, sex, race, ethnicity, education level, and states. [Mental_Health_Care_in_the_Last_4_Weeks (3).csv](https://github.com/ussyed11/Covid-19-Impact-on-Depression-in-USA/files/9073567/Mental_Health_Care_in_the_Last_4_Weeks.3.csv)
 * Symptoms of Depression Experienced in the Last two weeks is broken down by age groups, sex, gender, sexual orientation, race/ethnicity, education level, marital status,household size, income level. The data for each state can be found seperated by different tabs.  [US Census Depression Syndrome.xlsx](https://github.com/ussyed11/Covid-19-Impact-on-Depression-in-USA/files/9073568/US.Census.Depression.Syndrome.xlsx)
 * Covid Cases and Covid related deaths are broken down by states in 2021. [United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv](https://github.com/ussyed11/Covid-19-Impact-on-Depression-in-USA/files/9073569/United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv)
 * Information on mental health diagnoses and substance use. https://www.datafiles.samhsa.gov/dataset/mental-health-client-level-data-2019-mh-cld-2019-ds0001
+* A comprehensive table of Any Mental Illness, AMI, in Past Year: Among People Aged 18 or Older; by Gender and Detailed Age Category, Numbers in Thousands, 2019 and 2020.https://www.samhsa.gov/data/sites/default/files/reports/rpt35323/NSDUHDetailedTabs2020v25/NSDUHDetailedTabs2020v25/NSDUHDetTabsSect8pe2020.htm 
+* The total number of covid cases and covid related deaths in 2020 and 2021 as reported by the Center for Controlled Disease. https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-by-State-o/9mfq-cb36/data 
 
 ## Data Preprocessing
 
@@ -55,7 +57,7 @@ The total covid cases and deaths as reported by states.
 
 ## Machine Learning
 
-We started loading a mock up data set to initiate the supervised machine learning model by choosing the linear regression model.  We will also use k-mean clustering to predict the ideal location for the prospect mental wellness centers.
+An unsupervised machine learning algorithm of Elbow curve and k-means clustering is used to identify clusters of AMI based on covid-19 total cases.
 
 ## Initial Google Slides:
 
