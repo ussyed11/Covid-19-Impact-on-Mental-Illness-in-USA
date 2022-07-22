@@ -1,0 +1,28 @@
+Geographic/Socioeconomic Characteristic,Aged 18+(2019),Aged 18+(2020),Aged 18-25(2019),Aged 18-25(2020)
+TOTAL,51495,52859,9930,10238
+Northeast,8608,8383,1611,1677
+Midwest,11497,11866,2284,2192
+South,18212,18616,3544,3637
+West,13178,13994,2491,2733
+COUNTY TYPE,,,,
+Large Metro,28346,27213,5573,5311
+Small Metro,15837,17946,3136,3555
+Nonmetro,7312,7699,1222,1372
+Urbanized,3100,3360,596,627
+Less Urbanized,3554,3629,515,680
+Completely Rural,658,711,110,65
+POVERTY LEVEL1,,,,
+Less Than 100%,8646,9810,2262,2319
+100-199%,11258,11445,2338,2530
+200% or More,31255,31447,4994,5234
+EDUCATION LEVEL,,,,
+< High School,5505,5552,1107,933
+High School Graduate,11705,13170,2839,2794
+Some College/Associate‘s Degree,18250,18339,4584,4662
+College Graduate,16034,15798,1400,1850
+HEALTH INSURANCE2,,,,
+Private,30795,30239,6308,6412
+Medicaid/CHIP,11149,12102,2070,2210
+Other3,11598,13139,714,801
+No Coverage,5630,5824,1250,1382
+"* = low precision; -- = not available; da = does not apply; nc = not comparable due to methodological changes; nr = not reported due to measurement issues. NOTE: Estimates in the 2020 column are italicized to indicate caution should be used when comparing estimates between 2020 and prior years because of methodological changes for 2020. Due to these changes, significance testing between 2020 and prior years was not performed. See the 2020 National Survey on Drug Use and Health: Methodological Summary and Definitions for details. NOTE: Estimates in this table for 2020 exclude a subset of respondents who did not complete the questionnaire. The analysis weights and estimates were adjusted for the reduced sample size. See the 2020 National Survey on Drug Use and Health: Methodological Summary and Definitions for details. NOTE: Any Mental Illness (AMI) aligns with DSM-IV criteria and is defined as having a diagnosable mental, behavioral, or emotional disorder, other than a developmental or substance use disorder. These mental illness estimates are based on a predictive model and are not direct measures of diagnostic status. 1 Respondents aged 18 to 22 who were living in a college dormitory were excluded. 2 Respondents could indicate multiple types of health insurance; thus, these response categories are not mutually exclusive. 3 Other Health Insurance is defined as having Medicare, military-related health care, or any other type of health insurance. Definitions: Measures and terms are defined in Appendix A. Source: SAMHSA, Center for Behavioral Health Statistics and Quality, National Survey on Drug Use and Health, 2019 and Quarters 1 and 4, 2020.",,,,

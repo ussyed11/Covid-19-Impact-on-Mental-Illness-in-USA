@@ -1,0 +1,585 @@
+---
+title: "Data 607 - Final Project"
+output: html_document
+---
+
+### Project Proposal:
+
+Source of motivation for the final project is the article about: Education and Socioeconomic Status
+
+https://www.apa.org/pi/ses/resources/publications/education
+
+### Goal of the Project:
+
+To evaluate the impact of per_capita_income on the educational attainment.
+
+### How to achieve the Goal:
+
+1. Collect the required data.
+2. Perform the exploratory data analysis.
+3. Perform extract load and transform(ETL) process.
+4. Apply a linear regression model.
+5. Estimate the correlation between per_capita_income and the bachelors degree attainment.
+6. Interpretation of the results.
+
+### Data Sources:
+
+Web Scraping is performed to fetch fips code for all US counties: 
+
+https://en.wikipedia.org/wiki/List_of_United_States_FIPS_codes_by_county
+
+
+API call to fetch Census data for all US counties:
+
+https://api.census.gov/data/2019/acs/acs1?get=NAME,B01001_001E&for=county:*
+
+
+A CSV file is downloaded from 'Economic Research Service'
+U.S. DEPARTMENT OF AGRICULTURE:
+
+https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/
+
+
+
+### Importing Libraries
+
+
+```{r}
+library(tidycensus)
+library(tidyverse)
+library(dplyr)
+library(plotly)
+library(tidyr)
+library(stringr)
+library(rvest)
+library(ggpubr)
+library(ggiraph)
+library(ggiraphExtra)
+library(plyr)
+```
+
+
+
+### Web Scraping Counties fips code
+
+
+### Generate the html source code by calling the read_html function
+
+```{r}
+
+webpage <- read_html("https://en.wikipedia.org/wiki/List_of_United_States_FIPS_codes_by_county")
+
+tbls <- html_nodes(webpage, "table")
+
+head(tbls)
+```
+
+### Calling html_nodes function with CSS Selector and generating the table using html_table 
+
+```{r}
+
+fips_df <- webpage %>%
+        html_nodes("#mw-content-text") %>% html_table() %>% .[[1]]
+        
+head(fips_df)
+```
+
+### Data Cleaning for fips_df:
+
+### Renaming the columns
+
+```{r}
+fips_df <- fips_df %>% 
+  dplyr::rename(
+    fips_code = X1,
+    county = X2,
+    state = X3
+    )
+head(fips_df)
+```
+
+
+### Removing the unwanted rows
+
+```{r}
+
+fips_df <- fips_df[-c(1, 2), ]
+
+head(fips_df)
+```
+
+```{r}
+colnames(fips_df) 
+```
+
+```{r}
+# Drop the columns of the dataframe
+#select (fips_df,-c('.'))
+```
+
+
+
+
+```{r}
+fips_df <- na.omit(fips_df) # Method 1 - Remove NA
+head(fips_df)
+```
+
+### Removing string 'county'
+
+```{r}
+#fips_df$county<-gsub(" County","",as.character(fips_df$county))
+
+#head(fips_df)
+```
+
+```{r}
+names(fips_df) <- tolower(names(fips_df))   
+ 
+head(fips_df)
+```
+
+### Checking the working directory path and exporting data frame into a CSV file
+
+```{r}
+# Get working directory path
+path <- getwd()
+
+path
+
+```
+
+### Export file as csv to working directory. 
+
+```{r}
+
+write.csv(fips_df, file.path(path, "/posgresql/fips_data.csv"))
+
+```
+
+```{r}
+fips_df$NAME = paste(fips_df$county, fips_df$state, sep=", ")
+names(fips_df) <- tolower(names(fips_df))  
+head(fips_df)
+```
+
+```{r}
+#str(census_df)
+str(fips_df)
+```
+
+
+### Preparing for API Call Census 2010 Data
+
+```{r}
+Sys.setenv(census_api_key = "f7ce5a76ddf2088c73fda9c0a87410995cebbffa")
+Sys.getenv("census_api_key")
+```
+
+
+### Access the API key
+### Save the Census API key in the environmental variable.
+
+```{r}
+#census_api_key("YOUR KEY GOES HERE", install = TRUE)
+```
+
+
+```{r}
+Sys.getenv("census_api_key")
+```
+
+### Fetching Census Data for the year 2020
+
+```{r}
+# https://api.census.gov/data/2019/acs/acs1?get=NAME,B01001_001E&for=county:*
+
+census_df <- get_acs(
+  geography = "county",
+  variables = c(population = "B01003_001E",
+                median_age = "B01002_001E",
+                household_income = "B19013_001E",
+                per_capita_income = "B19301_001E",
+                poverty_count = "B17001_002E",
+                unemployment_count = "B23025_005E"
+                ),
+  output = "wide",
+  year = 2020
+)
+
+head(census_df)
+
+```
+
+
+### Data Cleaning for census_df:
+
+
+
+### Convert colnames to lowercase
+
+```{r}
+
+names(census_df) <- tolower(names(census_df))   
+ 
+head(census_df)
+```
+
+
+### Dropping null rows
+
+```{r}
+census_df <- na.omit(census_df) #  Remove NA
+head(census_df)
+```
+
+
+### Selecting the column of interest
+
+```{r}
+census_df <- select(census_df, name, population, median_age, household_income, per_capita_income, poverty_count, unemployment_count)
+
+str(census_df)
+```
+
+```{r}
+#sort descending
+census_df[order(-census_df$household_income), ]
+```
+
+
+### Now joining fips_df to census dataset
+
+```{r}
+census_df <- inner_join(census_df, fips_df, by = "name") # Applying inner_join() function
+
+head(census_df)
+```
+
+### Split the name into two
+
+```{r}
+#census_df %>% separate(name, c("county","state"), sep = " County,")
+census_df <- select(census_df,-c(name))
+```
+
+### Removing name column
+
+```{r}
+colnames(census_df)<-gsub(".x","",colnames(census_df))
+head(census_df)
+```
+
+### Removing string 'county' from column values
+
+```{r}
+census_df$county<-gsub(" County","",as.character(census_df$county))
+head(census_df)
+```
+
+
+```{r}
+# converting character type 
+# column to numeric
+census_df <- transform(census_df,
+                             fips_code = as.numeric(fips_code))
+```
+
+
+
+### Checking the working directory path and exporting data frame into a CSV file
+
+```{r}
+# Get working directory path
+path <- getwd()
+
+path
+
+```
+
+### Export file as csv to working directory.  
+
+```{r}
+
+write.csv(census_df, file.path(path, "/posgresql/census_data.csv"))
+
+```
+
+### Fetching the education data from GitHub
+
+```{r}
+education_df <- read_csv("https://raw.githubusercontent.com/uzmabb182/Data_607_Final_Project/main/ers_usda_education.csv")
+
+#head(education_df)
+```
+
+```{r}
+#colnames(education_df)
+
+```
+
+```{r}
+education_df <- education_df[-c(2:40)]
+education_df <- education_df[-c(1),]
+
+#head(education_df)
+```
+
+```{r}
+education_df <- rename_with(education_df, ~ tolower(gsub(",", "", .x, fixed = TRUE)))
+education_df <- rename_with(education_df, ~ tolower(gsub("'s", "", .x, fixed = TRUE)))
+education_df <- rename_with(education_df, ~ tolower(gsub(" ", "_", .x, fixed = TRUE)))
+education_df <- rename_with(education_df, ~ tolower(gsub("-", "_", .x, fixed = TRUE)))
+head(education_df)
+```
+
+```{r}
+education_df <- na.omit(education_df) # Method 1 - Remove NA
+#head(education_df)
+```
+
+```{r}
+###str(education_df)
+```
+
+### Checking the working directory path and exporting data frame into a CSV file
+
+```{r}
+# Get working directory path
+path <- getwd()
+
+path
+
+```
+
+### Export file as csv to working directory.
+
+```{r}
+
+write.csv(education_df, file.path(path, "/posgresql/education_data.csv"))
+
+```
+
+
+
+```{r}
+census_df$fips_code <- as.integer(census_df$fips_code) 
+education_df$fips_code <- as.integer(education_df$fips_code)
+```
+
+
+```{r}
+str(census_df)
+#str(education_df)
+
+#dim(census_df)
+#dim(education_df)
+
+```
+
+
+```{r}
+
+new_df <- census_df %>% inner_join(education_df, by="fips_code")
+       # Join by multiple columns
+
+nrow(new_df)
+```
+
+
+```{r}
+new_df <- new_df %>% 
+  relocate(fips_code, .before=county)
+new_df <-new_df %>% 
+  relocate(state, .after=county)
+head(new_df)
+```
+
+
+```{r}
+new_df$name = paste(new_df$county, new_df$state, sep=", ")
+new_df <- new_df %>% 
+  relocate(name, .before=county)
+#head(new_df)
+```
+
+### To calculate the percentage of poverty_count and unemployment_count 
+
+```{r}
+new_df <- mutate(new_df, percent_poverty_rate = (poverty_count/population)*100)
+new_df <- mutate(new_df, percent_unemployment_rate = (unemployment_count/population)*100)
+#head(new_df)
+```
+
+### Assumptions for performing linear regression:
+
+Before applying the linear regression model, the following four assumption must be made. And it is important to visualize the data based on these assumption.
+
+1.Independence of observations (aka no autocorrelation):
+
+Since there is only one independent variable and one dependent variable, we don’t need to test for any hidden relationships among variables.
+
+2. Normality:
+
+The normality can be checked by using the hist() function, which tells whether the dependent variable follows a normal distribution or not.
+
+```{r}
+hist(new_df$per_capita_income, 
+     main = "Histohram for Per Capita income",
+     xlab = "Per Capita income",
+     col = "green",
+     border="blue"
+     )
+```
+```{r}
+hist(new_df$percent_of_adults_with_a_bachelor_degree_or_higher_2015_19,
+     main = "Histohram for Bachelor Degree or Higher",
+     xlab = "Bachelor Degree or Higher",
+     col = "blue",
+     border="green")
+```
+
+The histograms show that our data follows the normal distribution.
+
+
+
+3- Linearity:
+
+The relationship between the independent and dependent variable must be linear. We can test this visually with a scatter plot to see if the distribution of data points could be described with a straight line.
+
+```{r}
+plot(percent_of_adults_with_a_bachelor_degree_or_higher_2015_19 ~ per_capita_income, data = new_df, main = "Percent of Adults with Bachelors Degree or Higher Vs Per capita Income",
+     xlab = "Per capita Income",
+     ylab = "percent of Adults with Bachelors Degree or Higher",
+     col = "red")
+
+
+```
+
+This scatter plot is showing a linear relationship between x and y variables.
+
+4- Homoscedasticity (aka homogeneity of variance):
+
+This means that the prediction error doesn’t change significantly over the range of prediction of the model.
+
+The residual plots:
+
+```{r}
+model <- lm(percent_of_adults_with_a_bachelor_degree_or_higher_2015_19 ~ per_capita_income, data = new_df)
+par(mfrow=c(2,2))
+plot(model, col = "blue")
+```
+
+The red lines representing the mean of the residuals are all basically horizontal and centered around zero. This means there are no outliers or biases in the data that would make a linear regression invalid.
+
+In the Normal Q-Qplot in the top right, we can see that the real residuals from our model form an almost perfectly one-to-one line with the theoretical residuals from a perfect model.
+
+Based on these residuals, we can say that our model meets the assumption of homoscedasticity.
+
+and the appropriate visualizations helps us better understand the data.
+
+
+### Simple Linear Regression Model: 
+
+Regression is a supervised learning algorithm which helps in determining how does one variable influence another variable.
+
+Simple linear regression is useful for modelling the relationship between a numeric or dependent variable (Y) and multiple explanatory or independent variable (X).
+
+The dependent variable (Y) here is 'percent_of_adults_with_a_bachelor_degree_or_higher_2015_19' and the independent variable (X) is per_capita_income.
+
+
+
+#### Simple Linear Regression Equation:
+
+percent_of_adults_with_a_bachelor_degree_or_higher_2015_19 = b0 + b4*per_capita_income 
+
+
+### Compute the summary of the model:
+
+```{r}
+model <- lm(percent_of_adults_with_a_bachelor_degree_or_higher_2015_19 ~ per_capita_income, data = new_df)
+summary(model)
+```
+
+
+### The F-Test of overall significance has the following two hypotheses:
+
+Null hypothesis (H0) : The model with no predictor variables (also known as an intercept-only model) fits the data as well as the regression model defined here.
+
+Alternative hypothesis (HA) : Your regression model fits the data better than the intercept-only model.
+
+### Interpretation:
+
+A large F-statistic will correspond to a statistically significant p-value (p < 0.05). In our example, the F-statistic equal 62.7 producing a p-value: 5.83e-13, which is highly significant. This means that, the predictor variables is significantly related to the outcome variable.
+
+And we accept the alternate hypothesis that our regression model fits the data better than the intercept-only model.
+
+The coefficients table shows the estimate of regression beta coefficients and the associated t-statistics p-values:
+
+
+```{r}
+summary(model)$coefficient
+```
+For a given predictor, the t-statistic evaluates whether or not there is significant association between the predictor and the outcome variable, that is whether the beta coefficient of the predictor is significantly different from zero.
+
+we can see, changing the per_capita_income variable is significantly associated to changes in percent_of_adults_with_a_bachelor_degree_or_higher_2015_19 
+
+For a given predictor variable, the coefficient (b) can be interpreted as the average effect on y of a one unit increase in predictor, holding all other predictors fixed.
+
+One unit increase in per_capita_income will significantly increase percent_of_adults_with_a_bachelor_degree_or_higher_2015_19, holding all other predictors fixed.
+
+### The confidence interval of the model coefficient can be:
+
+```{r}
+confint(model)
+```
+
+### Model accuracy assessment:
+
+R-squared:
+
+The value of R will always be positive and will range from zero to one. An R2 value close to 1 indicates that the model explains a large portion of the variance in the outcome variable.
+
+The  R2 = 0.302, meaning that “30% of the variance in the measure of percent_of_adults_with_a_bachelor_degree_or_higher_2015_19 can be predicted by coefficient predictor.
+
+### Residual Standard Error (RSE), or sigma:
+
+The RSE estimate gives a measure of error of prediction. The lower the RSE, the more accurate the model (on the data in hand).
+
+The error rate can be estimated by dividing the RSE by the mean outcome variable:
+
+```{r}
+
+sigma(model)/mean(new_df$percent_of_adults_with_a_bachelor_degree_or_higher_2015_19)
+
+```
+
+
+### The correlation coefficient between the two variables using the R function cor():
+
+```{r}
+
+cor(new_df$percent_of_adults_with_a_bachelor_degree_or_higher_2015_19, new_df$per_capita_income, method="pearson")
+
+```
+
+
+```{r}
+
+ggscatter(new_df, x = "percent_of_adults_with_a_bachelor_degree_or_higher_2015_19", y = "per_capita_income", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "pearson",
+          xlab = "percent_of_adults_with_a_bachelor_degree_or_higher_2015_19", ylab = "per_capita_income", col = "blue")
+
+```
+
+
+### Using ggPredict() - Visualize Regression Model
+
+### We can show this model with ggPredict() function and adjust the number of regression lines with parameter colorn. 
+
+
+```{r}
+ggPredict(model,interactive=TRUE,colorn=10,jitter=FALSE)
+```
+
