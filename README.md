@@ -24,16 +24,13 @@ The 2020 Covid-19 pandemic caused millions of Americans to isolate from others a
 
 ## Hypothesis
 
-* Null Hypothesis:  There is no relation between the COVID-19 pandemic and an increase in any mental health issues 
-* Alternate Hypothesis:  There is a relation between the COVID-19 pandemic and an increase in any mental health issues 
+* Null Hypothesis:  There is no relation between the COVID-19 pandemic and any mental health issues 
+* Alternate Hypothesis:  There is a relation between the COVID-19 pandemic and any mental health issues 
 
 
 ## Data Source
 In order to prove our hypothesis, we will utilize the following data sets and create several machine learning models to see if there is a correlation between covid-19 and mental health.
-* Percent of Adults struggling with depression from 2011-2020. This data is broken down by states. 
-https://usafacts.org/data/topics/people-society/health/health-risk-factors/depression/ 
-* Indicator- those who took prescription medication for mental health from 8/19/2020-8/31/2020. Data is broken down by age groups, sex, race, ethnicity, education level, and states. [Mental_Health_Care_in_the_Last_4_Weeks (3).csv](https://github.com/ussyed11/Covid-19-Impact-on-Depression-in-USA/files/9073567/Mental_Health_Care_in_the_Last_4_Weeks.3.csv)
-* Symptoms of Depression Experienced in the Last two weeks is broken down by age groups, sex, gender, sexual orientation, race/ethnicity, education level, marital status,household size, income level. The data for each state can be found seperated by different tabs.  [US Census Depression Syndrome.xlsx](https://github.com/ussyed11/Covid-19-Impact-on-Depression-in-USA/files/9073568/US.Census.Depression.Syndrome.xlsx)
+
 * Covid Cases and Covid related deaths are broken down by states in 2021. [United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv](https://github.com/ussyed11/Covid-19-Impact-on-Depression-in-USA/files/9073569/United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv)
 * Information on mental health diagnoses and substance use. https://www.datafiles.samhsa.gov/dataset/mental-health-client-level-data-2019-mh-cld-2019-ds0001
 * A comprehensive table of Any Mental Illness, AMI, in Past Year: Among People Aged 18 or Older; by Gender and Detailed Age Category, Numbers in Thousands, 2019 and 2020. https://www.samhsa.gov/data/sites/default/files/reports/rpt35323/NSDUHDetailedTabs2020v25/NSDUHDetailedTabs2020v25/NSDUHDetTabsSect8pe2020.htm 
@@ -46,37 +43,57 @@ https://www.mhanational.org/sites/default/files/2018%20The%20State%20of%20MH%20i
 
 * The States ranked by the Prevelance of Mental Health (AMI) for the year 2019. https://mhanational.org/sites/default/files/2019-09/2019%20MH%20in%20America%20Final.pdf
 * The States ranked by the Prevelance of Mental Health (AMI) for the year 2020. https://www.mhanational.org/issues/2020/mental-health-america-prevalence-data
-
+*https://www.mhanational.org/issues/2021/mental-health-america-prevalence-data
+* https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/ 
 
 ## Data Preprocessing
 
 We are using Google Colab to preprocess our data files, create dataframes, add or remove columns, remove null and Nan values, delete duplicates, and start with initial joins of databases in Pandas. We are using Matplotlib to explore data in scatter plots. The cleaned data set will be imported to a pgadmin4 database as a csv file format.
+https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Data%20Preprocessing
+We first began processing data for the year 2019 and 2019 and doing the ETL and EDA for 4 datasets. We used multiple pandas and python functions to clean and transform our data to merge to be used in machine learning models. 
+<img width="670" alt="Screen Shot 2022-07-22 at 7 26 33 PM" src="https://user-images.githubusercontent.com/100246124/180580312-58b44dc2-ad0f-41d7-a3f4-13ee3aff057f.png">
+<img width="1037" alt="Screen Shot 2022-07-22 at 7 26 55 PM" src="https://user-images.githubusercontent.com/100246124/180580328-0109f47e-9cc5-4c80-91fd-89ce71f3b112.png">
+
+We created some data visualizations to explore our data in detail: <img width="904" alt="Screen Shot 2022-07-22 at 7 32 02 PM" src="https://user-images.githubusercontent.com/100246124/180580552-766e1171-f1b8-4652-9ab5-1f1e54a923ce.png">
+
+## Analysis 
+<img src="https://user-images.githubusercontent.com/100246124/179753148-6efaf828-378d-4004-9051-d2eae4de62c7.jpg" width="600">
+We started our initial analysis for any mental illness cases for the four regions:
+West, South, Midwest, and  Northeast based on three age groups for two year 2019 & 2020.
+<img src="https://user-images.githubusercontent.com/100246124/179753186-e3463211-bafc-4b06-8090-bff945733bfe.png" width="600">
+Linear Regression Model with the best fit line. 
+<img src="https://user-images.githubusercontent.com/100246124/179753443-b06e003b-b2ca-414a-a6b3-2ed7a5d20d4d.png" width="600" height="400" >
+The total covid cases and deaths as reported by states. 
 
 ## Data Base
 
 We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find the needed information to create a final data set for the machine learning model.  We started with an ERD to show our initial data base structure via QuickDBD.  We selected our table names and datatypes.  
-
-## Analysis 
-<img src="https://user-images.githubusercontent.com/100246124/179753148-6efaf828-378d-4004-9051-d2eae4de62c7.jpg" width="600">
-Mental Health of the 4 US regions broken down by age groups as reported for 2019 (pre-covid) and 2020(covid) year. 
-<img src="https://user-images.githubusercontent.com/100246124/179753186-e3463211-bafc-4b06-8090-bff945733bfe.png" width="600">
-
-<img src="https://user-images.githubusercontent.com/100246124/179753443-b06e003b-b2ca-414a-a6b3-2ed7a5d20d4d.png" width="600" height="400" >
-The total covid cases and deaths as reported by states. 
-
 ## Machine Learning
 
 An unsupervised machine learning algorithm of Elbow curve and k-means clustering is used to identify clusters of AMI based on covid-19 total cases.
+https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/ML 
 
 Linear Regression Model
-After we trained the module with the dataset, the 
-<img width="627" alt="Screen Shot 2022-07-22 at 9 26 56 AM" src="https://user-images.githubusercontent.com/100246124/180448875-76e910e9-f286-4ed2-bbab-fd841eff7673.png">
+<img src="https://user-images.githubusercontent.com/100246124/180581062-20d727a0-f674-4516-bac2-63151ea4ecb2.png" width="600" height="400" >
+Correlation function was used to check which features are strongly correlated
+<img width="814" alt="Screen Shot 2022-07-22 at 7 44 40 PM" src="https://user-images.githubusercontent.com/100246124/180581163-6b9db52c-b781-4ed7-960d-eb1d34ce38e3.png">
+
+Unsupervised Machine Learning Steps 
+<img width="591" alt="Screen Shot 2022-07-22 at 7 47 43 PM" src="https://user-images.githubusercontent.com/100246124/180581314-e8fcd3fc-6780-44fa-9bef-0f43f07fde6b.png">
+Looked for the best K by creating an Elbow Curve. 
+<img width="696" alt="Screen Shot 2022-07-22 at 7 48 48 PM" src="https://user-images.githubusercontent.com/100246124/180581356-7e5fcd88-f141-4391-b7dc-fee39a90e554.png">
+Plot the five cluseters using the HV plot
 
 Multilinear Regression Model 
+<img width="786" alt="Screen Shot 2022-07-22 at 7 51 56 PM" src="https://user-images.githubusercontent.com/100246124/180581498-38cae955-fc73-40d8-948b-1510c871676d.png">
 
-<img width="788" alt="Screen Shot 2022-07-22 at 9 22 22 AM" src="https://user-images.githubusercontent.com/100246124/180448134-41551bd5-9ada-4bbf-8bb8-c239f9db069f.png">
+After fiting our data into a multilinear Regression Model and using the sklearn.model, our training score improved to 0.70 and testing score improved to 0.38. 
 
-K Means Clustering with Elbow Curve 
+## Tableau Story Dashboard 
+https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Dashboard
+We have our initial story/board created in tableau. We started with a drawn sketch before moving to tableau. 
+
+<img width="928" alt="Screen Shot 2022-07-22 at 7 57 23 PM" src="https://user-images.githubusercontent.com/100246124/180581751-dc41cce8-cb74-406b-8a84-3802229d46c8.png">
 
 ## Initial Google Slides:
 
