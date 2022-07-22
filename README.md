@@ -58,6 +58,12 @@ The total covid cases and deaths as reported by states.
 ## Machine Learning
 
 An unsupervised machine learning algorithm of Elbow curve and k-means clustering is used to identify clusters of AMI based on covid-19 total cases.
+Linear Regression Model 
+<img width="513" alt="Screen Shot 2022-07-22 at 9 24 49 AM" src="https://user-images.githubusercontent.com/100246124/180448480-841f5252-181d-41e7-8f5f-300d19883d45.png">
+
+Multilinear Regression Model 
+<img width="788" alt="Screen Shot 2022-07-22 at 9 22 22 AM" src="https://user-images.githubusercontent.com/100246124/180448134-41551bd5-9ada-4bbf-8bb8-c239f9db069f.png">
+
 
 ## Initial Google Slides:
 
