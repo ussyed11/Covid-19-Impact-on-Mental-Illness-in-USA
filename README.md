@@ -34,7 +34,7 @@ The 2020 Covid-19 pandemic caused millions of Americans to isolate from others a
 
 
 ## Data Source
-In order to prove our hypothesis, we will utilize the following data sets and create several machine learning models to see if there is a correlation between covid-19 and mental health.
+In order to prove our hypothesis, we will utilize the following data sets and create several machine learning models to see if there is a correlation between covid-19 and mental health.  We use python reguest function to read the html files in the pandas dataframe. 
 
 * Covid Cases and Covid related deaths are broken down by states in 2021. [United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv](https://github.com/ussyed11/Covid-19-Impact-on-Depression-in-USA/files/9073569/United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv)
 * Information on mental health diagnoses and substance use. https://www.datafiles.samhsa.gov/dataset/mental-health-client-level-data-2019-mh-cld-2019-ds0001
