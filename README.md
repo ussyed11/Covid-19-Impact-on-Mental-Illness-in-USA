@@ -5,7 +5,7 @@
 The 2020 Covid-19 pandemic caused millions of Americans to isolate from others and practice social distance. The purpose of this group project is to find if there is a correlation between the covid-19 pandemic and a negative affect on mental health issues. According to SAMHSA, "Any Mental Illness (AMI) is defined as having a diagnosable mental, behavioral, or emotional disorder, other than a developmental or substance use disorder. Any mental illness includes persons who have mild mental illness, moderate mental illness, and serious mental illness." We will primarily look at changes in mental health issues broken down by states in the United States. This analysis will be shared with interested investers to project profitable locations for mental health clinics and relaxation centers throughout the United States.
  
 
-### Questions we are looking to answer:
+## Questions we are looking to answer:
 
 * What impact did covid-19 have on adults' mental health?  
 * Was every state affected the same way or some states affected more than others? 
