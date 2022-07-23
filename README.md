@@ -20,7 +20,7 @@ The 2020 Covid-19 pandemic caused millions of Americans to isolate from others a
 #### After every subheading, there is a link that will direct the reader to the folder in our main branch. 
  
 
-### Questions we are looking to answer:
+## Questions we are looking to answer:
 
 * What impact did covid have on any mental illness?  
 * Was every state affected the same way or were some states affected more than others? 
