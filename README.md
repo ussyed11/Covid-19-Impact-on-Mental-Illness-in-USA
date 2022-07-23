@@ -97,6 +97,8 @@ Multilinear Regression Model
 
 After fiting our data into a multilinear Regression Model and using the sklearn.model, our training score improved to 0.70 and testing score improved to 0.38. 
 
+Next, we are going to explore some more aggrasive regression models such as Decision Tree Regressor and Random Forrest Regressor models.
+
 ## Tableau Story Dashboard 
 https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Dashboard
 
