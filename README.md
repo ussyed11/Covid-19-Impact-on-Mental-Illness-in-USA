@@ -10,7 +10,7 @@
 |Jessica| Github Lead | Responsible for updating the repository and ReadMe
 |Uzma | Database Lead/Project Manager | Create databases and manage the ETL Process. 
 
-Communication Protocols
+### Communication Protocols
 
 Primary communication happens over slack group channel and working sessions happen over zoom meetings. 
 
@@ -61,7 +61,7 @@ We first began processing data for the year 2019 and 2019 and doing the ETL and 
 
 We created some data visualizations to explore our data in detail: <img width="904" alt="Screen Shot 2022-07-22 at 7 32 02 PM" src="https://user-images.githubusercontent.com/100246124/180580552-766e1171-f1b8-4652-9ab5-1f1e54a923ce.png">
 
-## Analysis 
+## Exploratory data analysis
 <img src="https://user-images.githubusercontent.com/100246124/179753148-6efaf828-378d-4004-9051-d2eae4de62c7.jpg" width="600">
 We started our initial analysis for any mental illness cases for the four regions:
 West, South, Midwest, and  Northeast based on three age groups for two year 2019 & 2020.
