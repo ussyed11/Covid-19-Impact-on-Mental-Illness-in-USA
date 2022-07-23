@@ -80,7 +80,6 @@ We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find t
 ## Machine Learning
 https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/ML 
 
-An unsupervised machine learning algorithm of Elbow curve and k-means clustering is used to identify clusters of AMI based on covid-19 total cases. A limitation that we encountered when trying to run machine learning with our data set was the size of our data. 
 
 Linear Regression Model
 
@@ -88,16 +87,6 @@ Linear Regression Model
 Correlation function was used to check which features are strongly correlated
 <img width="600" alt="Screen Shot 2022-07-22 at 7 44 40 PM" src="https://user-images.githubusercontent.com/100246124/180581163-6b9db52c-b781-4ed7-960d-eb1d34ce38e3.png">
 
-Unsupervised Machine Learning Steps 
-
-<img width="600"  alt="Screen Shot 2022-07-22 at 7 47 43 PM" src="https://user-images.githubusercontent.com/100246124/180581314-e8fcd3fc-6780-44fa-9bef-0f43f07fde6b.png">
-
-Looked for the best K by creating an Elbow Curve
-
-<img width="600" alt="Screen Shot 2022-07-22 at 7 48 48 PM" src="https://user-images.githubusercontent.com/100246124/180581356-7e5fcd88-f141-4391-b7dc-fee39a90e554.png">
-Plot the five cluseters using the HV plot
-
-_____
 Multilinear Regression Model 
 
 <img width="600" alt="Screen Shot 2022-07-22 at 7 51 56 PM" src="https://user-images.githubusercontent.com/100246124/180581498-38cae955-fc73-40d8-948b-1510c871676d.png">
