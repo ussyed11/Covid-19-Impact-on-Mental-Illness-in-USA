@@ -111,6 +111,6 @@ We have our initial story/board created in tableau. We started with a drawn sket
 
 <img width="500" height="400" alt="Screen Shot 2022-07-22 at 7 57 23 PM" src="https://user-images.githubusercontent.com/100246124/180581751-dc41cce8-cb74-406b-8a84-3802229d46c8.png">
 
-## Initial Google Slides:
+## Google Slides:
 
 https://docs.google.com/presentation/d/1_zVBD73PyOs1N2mNhKlbCsAn87KuRsS9ESyjFUSO0Zo/edit?usp=sharing
