@@ -53,6 +53,7 @@ https://www.mhanational.org/sites/default/files/2018%20The%20State%20of%20MH%20i
 
 ## Data Preprocessing
 https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Data%20Preprocessing
+
 We are using Google Colab to preprocess our data files, create dataframes, add or remove columns, remove null and Nan values, delete duplicates, and start with initial joins of databases in Pandas. We are using Matplotlib to explore data in scatter plots. The cleaned data set will be imported to a pgadmin4 database as a csv file format.
 We first began processing data for the year 2019 and 2019 and doing the ETL and EDA for 4 datasets. We used multiple pandas and python functions to clean and transform our data to merge to be used in machine learning models. 
 <img width="670" alt="Screen Shot 2022-07-22 at 7 26 33 PM" src="https://user-images.githubusercontent.com/100246124/180580312-58b44dc2-ad0f-41d7-a3f4-13ee3aff057f.png">
@@ -71,6 +72,7 @@ The total covid cases and deaths as reported by states.
 
 ## Data Base
 https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/SQL
+
 We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find the needed information to create a final data set for the machine learning model.  We started with an ERD to show our initial data base structure via QuickDBD.  We selected our table names and datatypes. 
 <img width="760" alt="Screen Shot 2022-07-22 at 8 03 10 PM" src="https://user-images.githubusercontent.com/100246124/180582007-b6ae23e1-2d58-4a53-ab6a-4195c31cc4b4.png">
 
@@ -103,6 +105,7 @@ After fiting our data into a multilinear Regression Model and using the sklearn.
 
 ## Tableau Story Dashboard 
 https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Dashboard
+
 We have our initial story/board created in tableau. We started with a drawn sketch before moving to tableau. 
 
 <img width="500" height="400" alt="Screen Shot 2022-07-22 at 7 57 23 PM" src="https://user-images.githubusercontent.com/100246124/180581751-dc41cce8-cb74-406b-8a84-3802229d46c8.png">
