@@ -15,26 +15,30 @@
 Primary communication happens over slack group channel and working sessions happen over zoom meetings. 
 
 ## Overview 
-The 2020 Covid-19 pandemic caused millions of Americans to isolate from others and practice social distance. The purpose of this group project is to find if there is a correlation between the covid-19 pandemic and a negative affect on mental health and depression rates. We will primarily look at changes in mental health and depression rates broken down by states in the United States. This analysis will be shared with interested investers to project profitable locations for mental health clinics and relaxation centers throughout the United States. After every subheading, there is a link that will direct you to the folder in our main branch. 
+The 2020 Covid-19 pandemic caused millions of Americans to isolate from others and practice social distance. This could lead to increase in any mental illness.  According to the National Institute of Mental Health, "Mental illnesses are common in the United States. Nearly one in five U.S. adults live with a mental illness (52.9 million in 2020). Mental illnesses include many different conditions that vary in degree of severity, ranging from mild to moderate to severe. Two broad categories can be used to describe these conditions: Any Mental Illness (AMI) and Serious Mental Illness (SMI). AMI encompasses all recognized mental illnesses."  The purpose of this group project is to find if there is a correlation between the covid-19 pandemic and a negative affect on any mental illness cases in the United Sates.   We will primarily look at changes in mental health and depression rates broken down by states in the United States. This analysis will be shared with interested investers to project profitable states for mental health clinics and relaxation centers throughout the United States as we are also incporporating other socioeconomic factors influencing the AMI rise among adults 18 and over.  
+
+#### After every subheading, there is a link that will direct the reader to the folder in our main branch. 
  
 
 ### Questions we are looking to answer:
 
-* What impact did covid have on mental health especially depression?  
+* What impact did covid have on any mental illness?  
 * Was every state affected the same way or were some states affected more than others? 
 * Are the affects similar across age groups, income brackets, employment status, and education?
+* How accurately will our ML predicts mental health issues across states/regions based on features?
 * Which states are ideal for investors to open mental health clinics and relaxation centers?
-* How accurately will our ML predicts mental health issues across states/regions based on features ?
 
 
 ## Hypothesis
 
-* Null Hypothesis:  There is no relation between the COVID-19 pandemic and any mental health issues 
-* Alternate Hypothesis:  There is a relation between the COVID-19 pandemic and any mental health issues 
+* Null Hypothesis:  There is no correlation between the COVID-19 pandemic and any mental health issues 
+* Alternate Hypothesis:  There is a correlation between the COVID-19 pandemic and any mental health issues 
 
 
 ## Data Source
-In order to prove our hypothesis, we will utilize the following data sets and create several machine learning models to see if there is a correlation between covid-19 and mental health.
+https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Resources
+
+In order to prove our hypothesis, we will utilize the following data sets and create several machine learning models to see if there is a correlation between covid-19 and mental health outcome.
 
 * Covid Cases and Covid related deaths are broken down by states in 2021. [United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv](https://github.com/ussyed11/Covid-19-Impact-on-Depression-in-USA/files/9073569/United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv)
 * Information on mental health diagnoses and substance use. https://www.datafiles.samhsa.gov/dataset/mental-health-client-level-data-2019-mh-cld-2019-ds0001
