@@ -9,8 +9,12 @@
 |Dwayne |Dashboard Lead | Create a dashboard to present the data
 |Jessica| Github Lead | Responsible for updating the repository and ReadMe
 |Uzma | Database Lead/Project Manager | Create databases and manage the ETL Process. 
+
+Communication Protocols 
+Primary communication happens over slack group channel and working sessions happen over zoom meetings. 
+
 ## Overview 
-The 2020 Covid-19 pandemic caused millions of Americans to isolate from others and practice social distance. The purpose of this group project is to find if there is a correlation between the covid-19 pandemic and a negative affect on mental health and depression rates. We will primarily look at changes in mental health and depression rates broken down by states in the United States. This analysis will be shared with interested investers to project profitable locations for mental health clinics and relaxation centers throughout the United States.
+The 2020 Covid-19 pandemic caused millions of Americans to isolate from others and practice social distance. The purpose of this group project is to find if there is a correlation between the covid-19 pandemic and a negative affect on mental health and depression rates. We will primarily look at changes in mental health and depression rates broken down by states in the United States. This analysis will be shared with interested investers to project profitable locations for mental health clinics and relaxation centers throughout the United States. After every subheading, there is a link that will direct you to the folder in our main branch. 
  
 
 ### Questions we are looking to answer:
@@ -66,12 +70,13 @@ Linear Regression Model with the best fit line.
 The total covid cases and deaths as reported by states. 
 
 ## Data Base
+https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/SQL
+We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find the needed information to create a final data set for the machine learning model.  We started with an ERD to show our initial data base structure via QuickDBD.  We selected our table names and datatypes. 
+<img width="760" alt="Screen Shot 2022-07-22 at 8 03 10 PM" src="https://user-images.githubusercontent.com/100246124/180582007-b6ae23e1-2d58-4a53-ab6a-4195c31cc4b4.png">
 
-We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find the needed information to create a final data set for the machine learning model.  We started with an ERD to show our initial data base structure via QuickDBD.  We selected our table names and datatypes.  
 ## Machine Learning
-
-An unsupervised machine learning algorithm of Elbow curve and k-means clustering is used to identify clusters of AMI based on covid-19 total cases.
 https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/ML 
+An unsupervised machine learning algorithm of Elbow curve and k-means clustering is used to identify clusters of AMI based on covid-19 total cases. A limitation that we encountered when trying to run machine learning with our data set was the size of our data. 
 
 Linear Regression Model
 <img src="https://user-images.githubusercontent.com/100246124/180581062-20d727a0-f674-4516-bac2-63151ea4ecb2.png" width="600" height="400" >
