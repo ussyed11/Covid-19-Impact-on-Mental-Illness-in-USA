@@ -10,7 +10,8 @@
 |Jessica| Github Lead | Responsible for updating the repository and ReadMe
 |Uzma | Database Lead/Project Manager | Create databases and manage the ETL Process. 
 
-Communication Protocols 
+Communication Protocols
+
 Primary communication happens over slack group channel and working sessions happen over zoom meetings. 
 
 ## Overview 
@@ -47,13 +48,12 @@ https://www.mhanational.org/sites/default/files/2018%20The%20State%20of%20MH%20i
 
 * The States ranked by the Prevelance of Mental Health (AMI) for the year 2019. https://mhanational.org/sites/default/files/2019-09/2019%20MH%20in%20America%20Final.pdf
 * The States ranked by the Prevelance of Mental Health (AMI) for the year 2020. https://www.mhanational.org/issues/2020/mental-health-america-prevalence-data
-*https://www.mhanational.org/issues/2021/mental-health-america-prevalence-data
-* https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/ 
+* The States ranked by the Prevelance of Mental Health (AMI) for the year 2021.https://www.mhanational.org/issues/2021/mental-health-america-prevalence-data
+* Education Attainment broken down by US States. Economic Research Service(U.S. Department of Agriculture)https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/ 
 
 ## Data Preprocessing
-
-We are using Google Colab to preprocess our data files, create dataframes, add or remove columns, remove null and Nan values, delete duplicates, and start with initial joins of databases in Pandas. We are using Matplotlib to explore data in scatter plots. The cleaned data set will be imported to a pgadmin4 database as a csv file format.
 https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Data%20Preprocessing
+We are using Google Colab to preprocess our data files, create dataframes, add or remove columns, remove null and Nan values, delete duplicates, and start with initial joins of databases in Pandas. We are using Matplotlib to explore data in scatter plots. The cleaned data set will be imported to a pgadmin4 database as a csv file format.
 We first began processing data for the year 2019 and 2019 and doing the ETL and EDA for 4 datasets. We used multiple pandas and python functions to clean and transform our data to merge to be used in machine learning models. 
 <img width="670" alt="Screen Shot 2022-07-22 at 7 26 33 PM" src="https://user-images.githubusercontent.com/100246124/180580312-58b44dc2-ad0f-41d7-a3f4-13ee3aff057f.png">
 <img width="1037" alt="Screen Shot 2022-07-22 at 7 26 55 PM" src="https://user-images.githubusercontent.com/100246124/180580328-0109f47e-9cc5-4c80-91fd-89ce71f3b112.png">
@@ -76,21 +76,28 @@ We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find t
 
 ## Machine Learning
 https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/ML 
+
 An unsupervised machine learning algorithm of Elbow curve and k-means clustering is used to identify clusters of AMI based on covid-19 total cases. A limitation that we encountered when trying to run machine learning with our data set was the size of our data. 
 
 Linear Regression Model
+
 <img src="https://user-images.githubusercontent.com/100246124/180581062-20d727a0-f674-4516-bac2-63151ea4ecb2.png" width="600" height="400" >
 Correlation function was used to check which features are strongly correlated
-<img width="814" alt="Screen Shot 2022-07-22 at 7 44 40 PM" src="https://user-images.githubusercontent.com/100246124/180581163-6b9db52c-b781-4ed7-960d-eb1d34ce38e3.png">
+<img width="600" alt="Screen Shot 2022-07-22 at 7 44 40 PM" src="https://user-images.githubusercontent.com/100246124/180581163-6b9db52c-b781-4ed7-960d-eb1d34ce38e3.png">
 
 Unsupervised Machine Learning Steps 
-<img width="591" alt="Screen Shot 2022-07-22 at 7 47 43 PM" src="https://user-images.githubusercontent.com/100246124/180581314-e8fcd3fc-6780-44fa-9bef-0f43f07fde6b.png">
-Looked for the best K by creating an Elbow Curve. 
-<img width="696" alt="Screen Shot 2022-07-22 at 7 48 48 PM" src="https://user-images.githubusercontent.com/100246124/180581356-7e5fcd88-f141-4391-b7dc-fee39a90e554.png">
+
+<img width="600"  alt="Screen Shot 2022-07-22 at 7 47 43 PM" src="https://user-images.githubusercontent.com/100246124/180581314-e8fcd3fc-6780-44fa-9bef-0f43f07fde6b.png">
+
+Looked for the best K by creating an Elbow Curve
+
+<img width="600" alt="Screen Shot 2022-07-22 at 7 48 48 PM" src="https://user-images.githubusercontent.com/100246124/180581356-7e5fcd88-f141-4391-b7dc-fee39a90e554.png">
 Plot the five cluseters using the HV plot
 
+_____
 Multilinear Regression Model 
-<img width="786" alt="Screen Shot 2022-07-22 at 7 51 56 PM" src="https://user-images.githubusercontent.com/100246124/180581498-38cae955-fc73-40d8-948b-1510c871676d.png">
+
+<img width="600" alt="Screen Shot 2022-07-22 at 7 51 56 PM" src="https://user-images.githubusercontent.com/100246124/180581498-38cae955-fc73-40d8-948b-1510c871676d.png">
 
 After fiting our data into a multilinear Regression Model and using the sklearn.model, our training score improved to 0.70 and testing score improved to 0.38. 
 
@@ -98,7 +105,7 @@ After fiting our data into a multilinear Regression Model and using the sklearn.
 https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Dashboard
 We have our initial story/board created in tableau. We started with a drawn sketch before moving to tableau. 
 
-<img width="928" alt="Screen Shot 2022-07-22 at 7 57 23 PM" src="https://user-images.githubusercontent.com/100246124/180581751-dc41cce8-cb74-406b-8a84-3802229d46c8.png">
+<img width="500" height="400" alt="Screen Shot 2022-07-22 at 7 57 23 PM" src="https://user-images.githubusercontent.com/100246124/180581751-dc41cce8-cb74-406b-8a84-3802229d46c8.png">
 
 ## Initial Google Slides:
 
