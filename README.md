@@ -35,7 +35,7 @@ The 2020 Covid-19 pandemic caused millions of Americans to isolate from others a
 * Alternate Hypothesis:  There is a correlation between the COVID-19 pandemic and any mental health issues 
 
 
-## Data Source: "[Click Here]"https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Resources,"(y)"
+## Data Source: [Click Here](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Resources)
 
 In order to prove our hypothesis, we will utilize the following data sets and create several machine learning models to see if there is a correlation between covid-19 and mental health outcome.
 
