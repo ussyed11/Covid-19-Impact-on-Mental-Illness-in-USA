@@ -54,8 +54,7 @@ https://www.mhanational.org/sites/default/files/2018%20The%20State%20of%20MH%20i
 * The States ranked by the Prevelance of Mental Health (AMI) for the year 2021.https://www.mhanational.org/issues/2021/mental-health-america-prevalence-data
 * Education Attainment broken down by US States. Economic Research Service(U.S. Department of Agriculture)https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/ 
 
-## Data Preprocessing
-https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Data%20Preprocessing
+## Data Preprocessing: [Link to Folder](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Data%20Preprocessing)
 
 We are using Google Colab to preprocess our data files, create dataframes, add or remove columns, remove null and Nan values, delete duplicates, and start with initial joins of databases in Pandas. We are using Matplotlib to explore data in scatter plots. The cleaned data set will be imported to a pgadmin4 database as a csv file format.
 We first began processing data for the year 2019 and 2019 and doing the ETL and EDA for 4 datasets. We used multiple pandas and python functions to clean and transform our data to merge to be used in machine learning models. 
@@ -64,7 +63,8 @@ We first began processing data for the year 2019 and 2019 and doing the ETL and 
 
 We created some data visualizations to explore our data in detail: <img width="904" alt="Screen Shot 2022-07-22 at 7 32 02 PM" src="https://user-images.githubusercontent.com/100246124/180580552-766e1171-f1b8-4652-9ab5-1f1e54a923ce.png">
 
-## Exploratory Data Analysis
+## Exploratory Data Analysis: [Link to Folder](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/main/Data%20Preprocessing/pandas_preprocessing.ipynb)
+
 <img src="https://user-images.githubusercontent.com/100246124/179753148-6efaf828-378d-4004-9051-d2eae4de62c7.jpg" width="600">
 We started our initial analysis for any mental illness cases for the four regions:
 West, South, Midwest, and  Northeast based on three age groups for two year 2019 & 2020.
@@ -73,20 +73,18 @@ Linear Regression Model with the best fit line.
 <img src="https://user-images.githubusercontent.com/100246124/179753443-b06e003b-b2ca-414a-a6b3-2ed7a5d20d4d.png" width="600" height="400" >
 The total covid cases and deaths as reported by states. 
 
-## Data Base
-https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/SQL
+## Data Base: [Link to Folder](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/SQL)
 
 We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find the needed information to create a final data set for the machine learning model.  We started with an ERD to show our initial data base structure via QuickDBD.  We selected our table names and datatypes. 
 
 <img width="760" alt="Screen Shot 2022-07-22 at 8 03 10 PM" src="https://user-images.githubusercontent.com/100246124/180582007-b6ae23e1-2d58-4a53-ab6a-4195c31cc4b4.png">
 
-## Machine Learning
-https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/ML 
+## Machine Learning: [Link to Folder](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/ML) 
 
 ### Model selection
 We used different models in order to achieve the maximum accuracy
 
-Based on the nature of dataset, linear regression and decision tree were chosen.
+Based on the nature of dataset, linear regression, decision tree regressor, Lasso, and radient Boosting Regressor were chosen.
 
 X = features ('Tot_Cases', 'Toth_Deaths', '<High School', 'High School',
        'Some college or associates degree', 'Bachelors degree or higher',
@@ -111,13 +109,10 @@ After fiting our data into a multilinear Regression Model and using the sklearn.
 
 Next, we are going to explore some more aggrasive regression models such as Decision Tree Regressor and Random Forrest Regressor models.
 
-## Tableau Story Dashboard 
-https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Dashboard
+## Tableau Story Dashboard: [Link to the file](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Dashboard)
 
 We have our initial story/board created in tableau. We started with a drawn sketch before moving to tableau. 
 
 <img width="500" height="400" alt="Screen Shot 2022-07-22 at 7 57 23 PM" src="https://user-images.githubusercontent.com/100246124/180581751-dc41cce8-cb74-406b-8a84-3802229d46c8.png">
 
-## Google Slides:
-
-https://docs.google.com/presentation/d/1_zVBD73PyOs1N2mNhKlbCsAn87KuRsS9ESyjFUSO0Zo/edit?usp=sharing
+## [Google Slides](https://docs.google.com/presentation/d/1_zVBD73PyOs1N2mNhKlbCsAn87KuRsS9ESyjFUSO0Zo/edit?usp=sharing)
