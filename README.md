@@ -108,7 +108,11 @@ Multilinear Regression Model
 
 After fiting our data into a multilinear Regression Model and using the sklearn.model, our training score improved to 0.70 and testing score improved to 0.38. 
 
-Next, we are going to explore some more aggrasive regression models such as Decision Tree Regressor and Random Forrest Regressor models.
+Next, we tried Random Forest Regressor,  Decision Tree Regressor, Lasso, and Gradient Boosting Regressor models from sklearn.  Then we use sklearn Grid Search CV to find the best performing model for our data set.
+
+![Screen Shot 2022-07-24 at 4 08 06 PM](https://user-images.githubusercontent.com/98566486/180664024-809f4f83-8d9c-4cde-85ff-855f8442adc7.png)
+
+
 
 ## Tableau Story Dashboard: [Link to the file](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Dashboard)
 
