@@ -84,6 +84,19 @@ We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find t
 ## Machine Learning
 https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/ML 
 
+### Model selection
+We used different models in order to achieve the maximum accuracy
+
+Based on the nature of dataset, linear regression and decision tree were chosen.
+
+X = features ('Tot_Cases', 'Toth_Deaths', '<High School', 'High School',
+       'Some college or associates degree', 'Bachelors degree or higher',
+       'Employed_2017', 'Unemployed_2017', 'Employed_2018', 'Unemployed_2018',
+       'Employed_2019', 'Unemployed_2019', 'Employed_2020', 'Unemployed_2020',
+       'Employed_2021', 'Unemployed_2021', 'Median_Household_Income_2020')
+       
+y = prediction/target(18_or_Older_AMI_Total)
+
 
 Linear Regression Model
 
