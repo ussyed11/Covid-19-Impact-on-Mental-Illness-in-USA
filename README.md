@@ -76,6 +76,9 @@ The total covid cases and deaths as reported by states.
 ## Data Base: [Link to Folder](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/SQL)
 
 We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find the needed information to create a final data set for the machine learning model.  We started with an ERD to show our initial data base structure via QuickDBD.  We selected our table names and datatypes. 
+[Link to File](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/main/SQL/Phase2_ERD_Diagram.png)
+
+<img width="1345" alt="Screen Shot 2022-07-24 at 12 39 41 PM" src="https://user-images.githubusercontent.com/100246124/180657342-fba49814-93e5-4820-902b-0690c1b8c590.png">
 
 <img width="760" alt="Screen Shot 2022-07-22 at 8 03 10 PM" src="https://user-images.githubusercontent.com/100246124/180582007-b6ae23e1-2d58-4a53-ab6a-4195c31cc4b4.png">
 
