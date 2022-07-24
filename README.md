@@ -57,14 +57,14 @@ https://www.mhanational.org/sites/default/files/2018%20The%20State%20of%20MH%20i
 ## [Data Preprocessing](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Data%20Preprocessing)
 
 We are using Google Colab to preprocess our data files, create dataframes, add or remove columns, remove null and Nan values, delete duplicates, and start with initial joins of databases in Pandas. We are using Matplotlib to explore data in scatter plots. The cleaned data set will be imported to a pgadmin4 database as a csv file format.
-We first began processing data for the year 2019 and 2019 and doing the ETL and EDA for 4 datasets. We used multiple pandas and python functions to clean and transform our data to merge to be used in machine learning models. 
+We first began processing data for the year 2019 and 2019 and doing the ETL and EDA for 4 datasets. We used multiple pandas and python functions to clean and transform our data to merge to be used in machine learning models. [dep_covod 77](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/gitignore/Data%20Preprocessing/dep_covod%2077.ipynb) 
 <img width="670" alt="Screen Shot 2022-07-22 at 7 26 33 PM" src="https://user-images.githubusercontent.com/100246124/180580312-58b44dc2-ad0f-41d7-a3f4-13ee3aff057f.png">
 <img width="1037" alt="Screen Shot 2022-07-22 at 7 26 55 PM" src="https://user-images.githubusercontent.com/100246124/180580328-0109f47e-9cc5-4c80-91fd-89ce71f3b112.png">
 
 We created some data visualizations to explore our data in detail: <img width="904" alt="Screen Shot 2022-07-22 at 7 32 02 PM" src="https://user-images.githubusercontent.com/100246124/180580552-766e1171-f1b8-4652-9ab5-1f1e54a923ce.png">
 
-## Exploratory Data Analysis: [Link to Folder](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/main/Data%20Preprocessing/pandas_preprocessing.ipynb)
-The following file shows how the following graphics were derived: [dep_covod 2077](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/gitignore/Data%20Preprocessing/dep_covod%2077.ipynb) 
+## Exploratory Data Analysis: [Data Preprocessing](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/main/Data%20Preprocessing/pandas_preprocessing.ipynb)
+The following file shows how the following graphics were derived: [dep_covod 77](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/gitignore/Data%20Preprocessing/dep_covod%2077.ipynb) 
 
 <img src="https://user-images.githubusercontent.com/100246124/179753148-6efaf828-378d-4004-9051-d2eae4de62c7.jpg" width="600">
 We started our initial analysis for any mental illness cases for the four regions:
