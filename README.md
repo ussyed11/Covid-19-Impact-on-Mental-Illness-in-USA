@@ -51,7 +51,7 @@ https://www.mhanational.org/sites/default/files/2018%20The%20State%20of%20MH%20i
 
 * The States ranked by the Prevelance of Mental Health (AMI) for the year 2019. https://mhanational.org/sites/default/files/2019-09/2019%20MH%20in%20America%20Final.pdf
 * The States ranked by the Prevelance of Mental Health (AMI) for the year 2020. https://www.mhanational.org/issues/2020/mental-health-america-prevalence-data
-* The States ranked by the Prevelance of Mental Health (AMI) for the year 2021.https://www.mhanational.org/issues/2021/mental-health-america-prevalence-data
+
 * Education Attainment broken down by US States. Economic Research Service(U.S. Department of Agriculture)https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/ 
 
 ## Data Preprocessing: [Link to Folder](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Data%20Preprocessing)
