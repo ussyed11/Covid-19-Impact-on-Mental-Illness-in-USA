@@ -82,7 +82,7 @@ We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find t
 
 ## Machine Learning: [Link to Folder](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/ML) 
 
-### Model selection
+### Model selection : [Link to ML Model Code](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/main/ML/Multivariant_Regression.ipynb)
 We used different models in order to achieve the maximum accuracy
 
 Based on the nature of dataset, linear regression, decision tree regressor, Lasso, and radient Boosting Regressor were chosen.
@@ -106,7 +106,10 @@ Multilinear Regression Model
 
 <img width="600" alt="Screen Shot 2022-07-22 at 7 51 56 PM" src="https://user-images.githubusercontent.com/100246124/180581498-38cae955-fc73-40d8-948b-1510c871676d.png">
 
-After fiting our data into a multilinear Regression Model and using the sklearn.model, our training score improved to 0.70 and testing score improved to 0.38. 
+After fiting our data into a sklearn library's multilinear Regression Model, our training score improved to 0.58 and testing score improved to 0.88. 
+
+![Screen Shot 2022-07-24 at 4 51 18 PM](https://user-images.githubusercontent.com/98566486/180665419-1b50da3a-a0d8-4b53-8e50-e398e20ba574.png)
+
 
 Next, we tried Random Forest Regressor,  Decision Tree Regressor, Lasso, and Gradient Boosting Regressor models from sklearn.  Then we use sklearn Grid Search CV to find the best performing model for our data set.
 
