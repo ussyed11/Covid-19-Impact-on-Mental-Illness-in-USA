@@ -62,13 +62,15 @@ We first began processing data for the year 2019 and 2019 and doing the ETL and 
 We created some data visualizations to explore our data in detail: <img width="904" alt="Screen Shot 2022-07-22 at 7 32 02 PM" src="https://user-images.githubusercontent.com/100246124/180580552-766e1171-f1b8-4652-9ab5-1f1e54a923ce.png">
 
 ## Analysis 
+The following file shows how the following graphics were derived: https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/gitignore/Data%20Preprocessing/dep_covod%2077.ipynb 
+
 <img src="https://user-images.githubusercontent.com/100246124/179753148-6efaf828-378d-4004-9051-d2eae4de62c7.jpg" width="600">
 We started our initial analysis for any mental illness cases for the four regions:
-West, South, Midwest, and  Northeast based on three age groups for two year 2019 & 2020.
+West, South, Midwest, and  Northeast. Then we merged data into two age groups: adults 18+ and 18-26 for two year 2019 (Pre-Pandemic year) & 2020 (Pandemic Year).
 <img src="https://user-images.githubusercontent.com/100246124/179753186-e3463211-bafc-4b06-8090-bff945733bfe.png" width="600">
-Linear Regression Model with the best fit line. 
+We performed a Linear Regression Model, calculated the y-value and slope and graphed the best fit line. 
 <img src="https://user-images.githubusercontent.com/100246124/179753443-b06e003b-b2ca-414a-a6b3-2ed7a5d20d4d.png" width="600" height="400" >
-The total covid cases and deaths as reported by states. 
+This graph shows the total covid cases and deaths as reported by states. 
 
 ## Data Base
 https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/SQL
