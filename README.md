@@ -74,7 +74,7 @@ The following file shows how the following graphics were derived: [dep_covod 77]
 We started our initial analysis for any mental illness cases for the four regions:
 West, South, Midwest, and  Northeast. Then we merged data into two age groups: adults 18+ and 18-26 for two year 2019 (Pre-Pandemic year) & 2020 (Pandemic Year).
 <img src="https://user-images.githubusercontent.com/100246124/179753186-e3463211-bafc-4b06-8090-bff945733bfe.png" width="600">
-We performed a Linear Regression Model, calculated the y-value and slope and graphed the best fit line. 
+Linear Regression Model with the best fit line.
 <img src="https://user-images.githubusercontent.com/100246124/179753443-b06e003b-b2ca-414a-a6b3-2ed7a5d20d4d.png" width="600" height="400" >
 This graph shows the total covid cases and deaths as reported by states. 
 
