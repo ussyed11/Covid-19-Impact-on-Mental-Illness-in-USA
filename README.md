@@ -8,7 +8,7 @@
 | Darren| Technology Lead         | 	Machine learning model/Tableau|
 |Dwayne |Dashboard Lead | Create a dashboard to present the data
 |Jessica| Github Lead | Responsible for updating the repository and ReadMe
-|Uzma | Database Lead/Project Manager/Machine Learning Lead | Create databases, ETL Process, and design Machine Learning model.
+|Uzma | Database Lead/Project Manager/Machine Learning Lead | Data ETL, EDA Process, and design Machine Learning model.
 
 ### Communication Protocols
 
