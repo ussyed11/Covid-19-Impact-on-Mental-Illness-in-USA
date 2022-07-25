@@ -5,10 +5,10 @@
  Members     | Role     |    Responsibilities  |
 | ------------- | ------------- | -------- |
 | Daniel          | Database  Lead       | Create databases and manage the ETL process |
-| Darren| Machine Learning Lead         | Creating a machine learning model |
+| Darren| Technology Lead         | 	Machine learning model/Tableau|
 |Dwayne |Dashboard Lead | Create a dashboard to present the data
 |Jessica| Github Lead | Responsible for updating the repository and ReadMe
-|Uzma | Database Lead/Project Manager | Create databases and manage the ETL Process. 
+|Uzma | Database Lead/Project Manager/Machine Learning Lead | Create databases, ETL Process, and design Machine Learning model.
 
 ### Communication Protocols
 
@@ -88,7 +88,7 @@ We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find t
 
 ## Machine Learning: [ML](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/ML) 
 
-### Model selection
+### Model selection [Link to ML Model Code](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/main/ML/ML/Multivariant_Regression.ipynb)
 We used different models in order to achieve the maximum accuracy
 
 Based on the nature of dataset, linear regression, decision tree regressor, Lasso, and radient Boosting Regressor were chosen.
@@ -102,7 +102,7 @@ X = features ('Tot_Cases', 'Toth_Deaths', '<High School', 'High School',
 y = prediction/target(18_or_Older_AMI_Total)
 
 
-Linear Regression Model [Multivariant_Regression.ipynb](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/main/ML/ML/Multivariant_Regression.ipynb)
+Linear Regression Model 
 
 <img src="https://user-images.githubusercontent.com/100246124/180581062-20d727a0-f674-4516-bac2-63151ea4ecb2.png" width="600" height="400" >
 Correlation function was used to check which features are strongly correlated
