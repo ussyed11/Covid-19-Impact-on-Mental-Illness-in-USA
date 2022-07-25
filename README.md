@@ -126,4 +126,4 @@ We have our initial story/board created in tableau. We started with a drawn sket
 ## [Google Slides](https://docs.google.com/presentation/d/1_zVBD73PyOs1N2mNhKlbCsAn87KuRsS9ESyjFUSO0Zo/edit?usp=sharing)
 
 
-## [Link to tableau public storyboard:](https://public.tableau.com/views/Final_Project_EZ_CODERS/Story1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)) 
+## [Link to tableau public storyboard:](https://public.tableau.com/views/Final_Project_EZ_CODERS/Story1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
