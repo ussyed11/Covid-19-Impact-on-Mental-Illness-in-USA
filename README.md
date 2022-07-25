@@ -15,7 +15,7 @@
 Primary communication happens over slack group channel and working sessions happen over zoom meetings. 
 
 ## Overview 
-The 2020 Covid-19 pandemic caused millions of Americans to isolate from others and practice social distance. This could lead to increase in any mental illness.  According to the National Institute of Mental Health, "Mental illnesses are common in the United States. Nearly one in five U.S. adults live with a mental illness (52.9 million in 2020). Mental illnesses include many different conditions that vary in degree of severity, ranging from mild to moderate to severe. Two broad categories can be used to describe these conditions: Any Mental Illness (AMI) and Serious Mental Illness (SMI). AMI encompasses all recognized mental illnesses."(NIMH)  The purpose of this group project is to find if there is a correlation between the covid-19 pandemic and a negative affect on any mental illness cases in the United Sates.   We will primarily look at changes in mental health and depression rates broken down by states in the United States. This analysis will be shared with interested investers to project profitable states for mental health clinics and relaxation centers throughout the United States as we are also incporporating other socioeconomic factors influencing the AMI rise among adults 18 and over.  
+The 2020 Covid-19 pandemic caused millions of Americans to isolate from others and practice social distance. This could lead to increase in any mental illness.  According to the National Institute of Mental Health, "Mental illnesses are common in the United States. Nearly one in five U.S. adults live with a mental illness (52.9 million in 2020). Mental illnesses include many different conditions that vary in degree of severity, ranging from mild to moderate to severe. Two broad categories can be used to describe these conditions: Any Mental Illness (AMI) and Serious Mental Illness (SMI). AMI encompasses all recognized mental illnesses."(NIMH)  The purpose of this group project is to find if there is a correlation between the covid-19 pandemic and a negative affect on any mental illness cases in the United Sates.   We will primarily look at changes in mental health and depression rates broken down by states in the United States. This analysis will be shared with interested investers to project profitable states for mental health clinics and relaxation centers throughout the United States as we are also incorporating other socioeconomic factors influencing the AMI rise among adults 18 and over.  
 
 #### After every subheading, there is a link that will direct the reader to the folder in our main branch. 
  
@@ -50,8 +50,11 @@ In order to prove our hypothesis, we will utilize the following data sets and cr
 https://www.mhanational.org/sites/default/files/2018%20The%20State%20of%20MH%20in%20America%20-%20FINAL.pdf 
 
 * The States ranked by the Prevelance of Mental Health (AMI) for the year 2019. https://mhanational.org/sites/default/files/2019-09/2019%20MH%20in%20America%20Final.pdf
+
 * The States ranked by the Prevelance of Mental Health (AMI) for the year 2020. https://www.mhanational.org/issues/2020/mental-health-america-prevalence-data
+
 * The States ranked by the Prevelance of Mental Health (AMI) for the year 2021.https://www.mhanational.org/issues/2021/mental-health-america-prevalence-data
+
 * Education Attainment broken down by US States. Economic Research Service(U.S. Department of Agriculture)https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/ 
 
 ## [Data Preprocessing](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Data%20Preprocessing)
@@ -64,6 +67,7 @@ We first began processing data for the year 2019 and 2019 and doing the ETL and 
 We created some data visualizations to explore our data in detail: <img width="904" alt="Screen Shot 2022-07-22 at 7 32 02 PM" src="https://user-images.githubusercontent.com/100246124/180580552-766e1171-f1b8-4652-9ab5-1f1e54a923ce.png">
 
 ## Exploratory Data Analysis: [Data Preprocessing](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/main/Data%20Preprocessing/pandas_preprocessing.ipynb)
+
 The following file shows how the following graphics were derived: [dep_covod 77](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/gitignore/Data%20Preprocessing/dep_covod%2077.ipynb) 
 
 <img src="https://user-images.githubusercontent.com/100246124/179753148-6efaf828-378d-4004-9051-d2eae4de62c7.jpg" width="600">
@@ -108,9 +112,13 @@ Multilinear Regression Model
 
 <img width="600" alt="Screen Shot 2022-07-22 at 7 51 56 PM" src="https://user-images.githubusercontent.com/100246124/180581498-38cae955-fc73-40d8-948b-1510c871676d.png">
 
-After fiting our data into a multilinear Regression Model and using the sklearn.model, our training score improved to 0.70 and testing score improved to 0.38. 
+After fiting our data into a sklearn library's multilinear Regression Model, our training score improved to 0.58 and testing score improved to 0.88. 
 
-Next, we are going to explore some more aggrasive regression models such as Decision Tree Regressor and Random Forrest Regressor models.
+![Screen Shot 2022-07-24 at 4 51 18 PM](https://user-images.githubusercontent.com/98566486/180665419-1b50da3a-a0d8-4b53-8e50-e398e20ba574.png)
+
+Next, we tried Random Forest Regressor,  Decision Tree Regressor, Lasso, and Gradient Boosting Regressor models from sklearn.  Then we use sklearn Grid Search CV to find the best performing model for our data set.
+
+![Screen Shot 2022-07-24 at 4 08 06 PM](https://user-images.githubusercontent.com/98566486/180664024-809f4f83-8d9c-4cde-85ff-855f8442adc7.png)
 
 ## Tableau Story Dashboard: [Dashboard Rough Sketch](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Dashboard)
 
@@ -119,3 +127,6 @@ We have our initial story/board created in tableau. We started with a drawn sket
 <img width="500" height="400" alt="Screen Shot 2022-07-22 at 7 57 23 PM" src="https://user-images.githubusercontent.com/100246124/180581751-dc41cce8-cb74-406b-8a84-3802229d46c8.png">
 
 ## [AMI & Covid presentation](https://docs.google.com/presentation/d/1_zVBD73PyOs1N2mNhKlbCsAn87KuRsS9ESyjFUSO0Zo/edit?usp=sharing)
+
+
+## [Link to Tableau Public Storyboard:](https://public.tableau.com/views/Final_Project_EZ_CODERS/Story1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
