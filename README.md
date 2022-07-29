@@ -35,27 +35,27 @@ The 2020 Covid-19 pandemic caused millions of Americans to isolate from others a
 * Alternate Hypothesis:  There is a correlation between the COVID-19 pandemic and any mental health issues 
 
 
-## [Resources](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Resources)
+## [Data Sources](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Resources)
 
 In order to prove our hypothesis, we will utilize the following data sets and create several machine learning models to see if there is a correlation between covid-19 and mental health outcome.
 
 * Covid Cases and Covid related deaths are broken down by states in 2021. [United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv](https://github.com/ussyed11/Covid-19-Impact-on-Depression-in-USA/files/9073569/United_States_COVID-19_Cases_and_Deaths_by_State_over_Time.csv)
-* Information on mental health diagnoses and substance use. https://www.datafiles.samhsa.gov/dataset/mental-health-client-level-data-2019-mh-cld-2019-ds0001
-* A comprehensive table of Any Mental Illness, AMI, in Past Year: Among People Aged 18 or Older; by Gender and Detailed Age Category, Numbers in Thousands, 2019 and 2020. https://www.samhsa.gov/data/sites/default/files/reports/rpt35323/NSDUHDetailedTabs2020v25/NSDUHDetailedTabs2020v25/NSDUHDetTabsSect8pe2020.htm 
-* The total number of covid cases and covid related deaths in 2020 and 2021 as reported by the Center for Controlled Disease. https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-by-State-o/9mfq-cb36/data 
+* Information on mental health diagnoses and substance use. [Data](https://www.datafiles.samhsa.gov/dataset/mental-health-client-level-data-2019-mh-cld-2019-ds0001)
+* A comprehensive table of Any Mental Illness, AMI, in Past Year: Among People Aged 18 or Older; by Gender and Detailed Age Category, Numbers in Thousands, 2019 and 2020. [Data](https://www.samhsa.gov/data/sites/default/files/reports/rpt35323/NSDUHDetailedTabs2020v25/NSDUHDetailedTabs2020v25/NSDUHDetTabsSect8pe2020.htm)
+* The total number of covid cases and covid related deaths in 2020 and 2021 as reported by the Center for Controlled Disease. [Data](https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-by-State-o/9mfq-cb36/data) 
 
-* The States ranked by the Prevelance of Mental Health (AMI) for the year 2017. https://www.mhanational.org/sites/default/files/2017%20MH%20in%20America%20Full.pdf
+* The States ranked by the Prevelance of Mental Health (AMI) for the year 2017. [Data](https://www.mhanational.org/sites/default/files/2017%20MH%20in%20America%20Full.pdf)
 
 * The States ranked by the Prevelance of Mental Health (AMI) for the year 2018.
-https://www.mhanational.org/sites/default/files/2018%20The%20State%20of%20MH%20in%20America%20-%20FINAL.pdf 
+[Data](https://www.mhanational.org/sites/default/files/2018%20The%20State%20of%20MH%20in%20America%20-%20FINAL.pdf) 
 
-* The States ranked by the Prevelance of Mental Health (AMI) for the year 2019. https://mhanational.org/sites/default/files/2019-09/2019%20MH%20in%20America%20Final.pdf
+* The States ranked by the Prevelance of Mental Health (AMI) for the year 2019. [Data](https://mhanational.org/sites/default/files/2019-09/2019%20MH%20in%20America%20Final.pdf)
 
-* The States ranked by the Prevelance of Mental Health (AMI) for the year 2020. https://www.mhanational.org/issues/2020/mental-health-america-prevalence-data
+* The States ranked by the Prevelance of Mental Health (AMI) for the year 2020. [Data](https://www.mhanational.org/issues/2020/mental-health-america-prevalence-data)
 
-* The States ranked by the Prevelance of Mental Health (AMI) for the year 2021.https://www.mhanational.org/issues/2021/mental-health-america-prevalence-data
+* The States ranked by the Prevelance of Mental Health (AMI) for the year 2021.[Data](https://www.mhanational.org/issues/2021/mental-health-america-prevalence-data)
 
-* Education Attainment broken down by US States. Economic Research Service(U.S. Department of Agriculture)https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/ 
+* Education Attainment broken down by US States. Economic Research Service(U.S. Department of Agriculture)[Data](https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/) 
 
 ## [Data Preprocessing](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Data%20Preprocessing)
 
