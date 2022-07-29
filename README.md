@@ -68,7 +68,7 @@ We created some data visualizations to explore our data in detail: <img width="9
 
 ## Exploratory Data Analysis: [Data Preprocessing](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/main/Data%20Preprocessing/pandas_preprocessing.ipynb)
 
-The following file shows the exploratory data analysis and transformation: [dep_covod 77](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/gitignore/Data%20Preprocessing/dep_covod%2077.ipynb) 
+The following file shows the exploratory data analysis and transformation: [EDA](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/main/Data%20Preprocessing/eda_final.ipynb)
 
 <img src="https://user-images.githubusercontent.com/100246124/179753148-6efaf828-378d-4004-9051-d2eae4de62c7.jpg" width="600">
 We started our initial analysis for any mental illness cases for the four regions:
