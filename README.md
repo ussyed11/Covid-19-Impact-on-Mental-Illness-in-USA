@@ -86,7 +86,7 @@ We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find t
 <img width="1345" alt="Screen Shot 2022-07-24 at 12 39 41 PM" src="https://user-images.githubusercontent.com/100246124/180657342-fba49814-93e5-4820-902b-0690c1b8c590.png">
 
 
-## Machine Learning: [ML](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/ML) 
+## Machine Learning: [ML]https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/ML/ML
 
 ### Model selection [Link to ML Model Code]https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/main/ML/ML/different_L_Regression.ipynb
 We used different models in order to achieve the maximum accuracy
