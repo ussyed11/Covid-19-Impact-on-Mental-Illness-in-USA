@@ -129,4 +129,4 @@ We have our initial story/board created in tableau. We started with a drawn sket
 ## [AMI & Covid presentation](https://docs.google.com/presentation/d/1_zVBD73PyOs1N2mNhKlbCsAn87KuRsS9ESyjFUSO0Zo/edit?usp=sharing)
 
 
-## [Link to Tableau Public Storyboard:](https://public.tableau.com/views/Final_Project_EZ_CODERS_Final/Story2?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+## [Link to Tableau Public Storyboard:](https://public.tableau.com/views/Final_Project_EZ_CODERS_Final/AMITotalPerRegion?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
