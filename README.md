@@ -116,9 +116,10 @@ After fiting our data into a sklearn library's Multivariate Regression Model, ou
 
 ![Screen Shot 2022-07-24 at 4 51 18 PM](https://user-images.githubusercontent.com/98566486/180665419-1b50da3a-a0d8-4b53-8e50-e398e20ba574.png)
 
-Next, we tried Random Forest Regressor,  Decision Tree Regressor, Lasso, and Gradient Boosting Regressor models from sklearn.  Then we use sklearn Grid Search CV to find the best performing model for our data set.
+Next, we tried Random Forest Regressor,  Decision Tree Regressor, Ridge Regressor, and Gradient Boosting Regressor models from sklearn.  Then we use sklearn Grid Search CV to find the best performing model for our data set.
 
-![Screen Shot 2022-07-24 at 4 08 06 PM](https://user-images.githubusercontent.com/98566486/180664024-809f4f83-8d9c-4cde-85ff-855f8442adc7.png)
+(![Screen Shot 2022-08-04 at 1 22 17 PM](https://user-images.githubusercontent.com/98566486/182912662-7f81b47d-b495-4374-8be4-d9e510330b13.png)
+
 
 ## Tableau Story Dashboard: [Dashboard Rough Sketch](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Dashboard)
 
