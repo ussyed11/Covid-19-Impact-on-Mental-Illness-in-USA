@@ -1,6 +1,6 @@
 ![covid-mh-prime](https://user-images.githubusercontent.com/98566486/178073212-c4bd7c12-8c4b-4964-8dcd-a857379149c3.jpg)
 
-# Covid-19 & Any Mental Illness Across the United States
+# Covid-19 Impact on Any Mental Illness in USA
 ## Group Members
  Members     | Role     |    Responsibilities  |
 | ------------- | ------------- | -------- |
