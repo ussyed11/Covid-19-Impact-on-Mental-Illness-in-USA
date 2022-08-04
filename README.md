@@ -121,6 +121,11 @@ We train and test Gradient Boosting Regressor and Ridge Regressor models and fou
 
 ![Screen Shot 2022-08-04 at 1 25 39 PM](https://user-images.githubusercontent.com/98566486/182913237-c76edf8b-bc55-4356-860b-dabd1aca1a68.png)
 
+## Conclusion
+Our analysis confirmed our alternative hypothesis that any mental illness cases have been increased at least 20% nationwide compared to pre-pandemic increase of AMI cases (2017-2019).  Some states and Regions have seen significant increase in AMI cases during the last two years, however more data and research is needed to design an accurate machine learning predictors.
+Due to lack of available published data for AMI, our machine learning model did not performed at our expected levels.  More data on AMI specific to each State’s county level with georaphical factors such as climate and population will be a good resource for future any mental illness cases analysis.
+
+
 
 ## Tableau Story Dashboard: [Dashboard Rough Sketch](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Dashboard)
 
