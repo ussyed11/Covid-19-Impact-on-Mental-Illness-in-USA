@@ -25,7 +25,7 @@ The 2020 Covid-19 pandemic caused millions of Americans to isolate from others a
 * What impact did covid have on any mental illness?  
 * Was every state affected the same way or were some states affected more than others? 
 * Are the affects similar across age groups, income brackets, employment status, and education?
-* How accurately will our ML predicts mental health issues across states/regions based on features?
+* How accurately will our ML predict mental health issues across states/regions based on features?
 * Which states are ideal for investors to open mental health clinics and relaxation centers?
 
 
