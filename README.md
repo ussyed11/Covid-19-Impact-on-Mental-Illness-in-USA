@@ -89,9 +89,10 @@ We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find t
 ## Machine Learning: [ML](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/ML/ML)
 
 ### Model selection [Link to ML Model Code](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/main/ML/ML/different_L_Regression.ipynb)
-We used different models in order to achieve the maximum accuracy
 
-Based on the nature of dataset, linear regression, decision tree regressor, Lasso, and radient Boosting Regressor were chosen.
+We ran some EDA to clean up our merged dataframe.  We used sklearn Corr() funtion to check the correlation coefficient between the proposed input features:
+
+<img src="https://user-images.githubusercontent.com/100246124/180581062-20d727a0-f674-4516-bac2-63151ea4ecb2.png" width="600" height="400" >
 
 X = features ('Tot_Cases', 'Toth_Deaths', '<High School', 'High School',
        'Some college or associates degree', 'Bachelors degree or higher',
@@ -102,27 +103,20 @@ X = features ('Tot_Cases', 'Toth_Deaths', '<High School', 'High School',
 y = prediction/target(18_or_Older_AMI_Total)
 
 
-Linear Regression Model 
-
-<img src="https://user-images.githubusercontent.com/100246124/180581062-20d727a0-f674-4516-bac2-63151ea4ecb2.png" width="600" height="400" >
-Correlation function was used to check which features are strongly correlated
-
-
 Multivariate Regression Model 
 
-<img width="600" alt="Screen Shot 2022-07-22 at 7 51 56 PM" src="https://user-images.githubusercontent.com/100246124/180581498-38cae955-fc73-40d8-948b-1510c871676d.png">
+![Screen Shot 2022-08-04 at 1 31 31 PM](https://user-images.githubusercontent.com/98566486/182914161-55ae64af-3393-474a-8494-5a67a10cd0c0.png)
+![Screen Shot 2022-08-04 at 1 32 31 PM](https://user-images.githubusercontent.com/98566486/182914272-8a992bde-88e3-407c-b5fd-b13bd6afdded.png)
 
 After fiting our data into a sklearn library's Multivariate Regression Model, our training score improved to 0.58 and testing score improved to 0.88. 
 
-![Screen Shot 2022-07-24 at 4 51 18 PM](https://user-images.githubusercontent.com/98566486/180665419-1b50da3a-a0d8-4b53-8e50-e398e20ba574.png)
-
-Next, we tried Random Forest Regressor,  Decision Tree Regressor, Ridge Regressor, and Gradient Boosting Regressor models from sklearn.  Then we use sklearn Grid Search CV to find the best performing model for our data set.
+Then we use sklearn Grid Search CV to find the best performing model for our data set. We tried Random Forest Regressor,  Decision Tree Regressor, Ridge Regressor, and Gradient Boosting Regressor models from sklearn.
 
 (![Screen Shot 2022-08-04 at 1 22 17 PM](https://user-images.githubusercontent.com/98566486/182912662-7f81b47d-b495-4374-8be4-d9e510330b13.png)
 
 We train and test Gradient Boosting Regressor and Ridge Regressor models and found the following test results:
-![Screen Shot 2022-08-04 at 1 25 17 PM](https://user-images.githubusercontent.com/98566486/182913201-1603b3f4-1181-4ba2-980b-ef6a6b20b48f.png)
 
+![Screen Shot 2022-08-04 at 1 25 08 PM](https://user-images.githubusercontent.com/98566486/182913741-e88a6e99-8ce3-4d31-a7d8-c12b064bef17.png)
 ![Screen Shot 2022-08-04 at 1 25 21 PM](https://user-images.githubusercontent.com/98566486/182913221-e9aa21aa-5710-4fe4-8760-ab7573b24fdf.png)
 
 ![Screen Shot 2022-08-04 at 1 25 39 PM](https://user-images.githubusercontent.com/98566486/182913237-c76edf8b-bc55-4356-860b-dabd1aca1a68.png)
