@@ -120,6 +120,13 @@ Next, we tried Random Forest Regressor,  Decision Tree Regressor, Ridge Regresso
 
 (![Screen Shot 2022-08-04 at 1 22 17 PM](https://user-images.githubusercontent.com/98566486/182912662-7f81b47d-b495-4374-8be4-d9e510330b13.png)
 
+We train and test Gradient Boosting Regressor and Ridge Regressor models and found the following test results:
+![Screen Shot 2022-08-04 at 1 25 17 PM](https://user-images.githubusercontent.com/98566486/182913201-1603b3f4-1181-4ba2-980b-ef6a6b20b48f.png)
+
+![Screen Shot 2022-08-04 at 1 25 21 PM](https://user-images.githubusercontent.com/98566486/182913221-e9aa21aa-5710-4fe4-8760-ab7573b24fdf.png)
+
+![Screen Shot 2022-08-04 at 1 25 39 PM](https://user-images.githubusercontent.com/98566486/182913237-c76edf8b-bc55-4356-860b-dabd1aca1a68.png)
+
 
 ## Tableau Story Dashboard: [Dashboard Rough Sketch](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/Dashboard)
 
