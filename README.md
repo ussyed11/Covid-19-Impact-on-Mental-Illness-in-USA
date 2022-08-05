@@ -88,7 +88,7 @@ We are usinng PostgresSQL's pgadmin4 to store our data set and run SQL to find t
 
 ## Machine Learning: [ML](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/tree/main/ML/ML)
 
-### Model selection [Link to ML Model Code]
+### Model selection [Link to ML Model Code](https://github.com/ussyed11/Covid-19-Impact-on-Mental-Illness-in-USA/blob/main/ML/ML/different_L_Regression.ipynb)
 
 We ran some EDA to clean up our merged dataframe.  We used sklearn Corr() funtion to check the correlation coefficient between the proposed input features:
 
